@@ -32,6 +32,9 @@ To introduce the differentiated emergence of the forge before later doctrinal st
 This part must not become mythologizing prose detached from the operational weight of the originals.
 Its duty is to preserve seriousness while reducing internal density to a public-readable threshold.
 
+### First draft created
+- [Part I Draft — The Constitutional Prologue](./forge-diaries-volume-public-0.1-part-i-constitutional-prologue-draft.md)
+
 ## Part II — drafting guidance
 **Part title:** The Adversarial Crucible
 
@@ -67,4 +70,4 @@ The volume should advance by **curated accretion**.
 Not every strong diary becomes a public text directly. Some entries will function as structural sources whose best public life is derivative.
 
 ## Immediate next drafting move
-Draft the opening public-facing text for **Part I — The Constitutional Prologue**, now that Part II has its first chapter draft.
+Move from drafting the first two parts toward a more explicit map of Part III — Governance, Memory and Form.

@@ -15,6 +15,7 @@ It is not the sovereign operational HQ of the Verittà ecosystem.
 - [Forge Diaries Release Wave 01](./forge-diaries-release-wave-01.md)
 - [Forge Diaries — Public Volume 0.1 Architecture](./forge-diaries-volume-public-0.1-architecture.md)
 - [Forge Diaries — Public Volume 0.1 Drafting](./forge-diaries-volume-public-0.1-drafting.md)
+- [Forge Diaries — Part I Draft: The Constitutional Prologue](./forge-diaries-volume-public-0.1-part-i-constitutional-prologue-draft.md)
 - [Forge Diaries — Part II Draft: The Adversarial Crucible](./forge-diaries-volume-public-0.1-part-ii-adversarial-crucible-draft.md)
 
 ## Core public documents
