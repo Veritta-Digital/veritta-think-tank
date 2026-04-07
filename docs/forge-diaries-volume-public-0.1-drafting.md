@@ -32,8 +32,16 @@ To introduce the differentiated emergence of the forge before later doctrinal st
 This part must not become mythologizing prose detached from the operational weight of the originals.
 Its duty is to preserve seriousness while reducing internal density to a public-readable threshold.
 
-## Part II — first nucleus selection
+## Part II — drafting guidance
 **Part title:** The Adversarial Crucible
+
+### Format decision
+The first public-facing piece of Part II should enter as a **volume chapter**, not as a stand-alone essay and not as a casebook.
+
+### Reason for the format decision
+- it depends on cumulative tension rather than a single discrete event;
+- it draws force from multiple sources that illuminate one another;
+- its best public function is to deepen the volume's middle architecture rather than compete with the already promoted essays.
 
 ### Core nucleus selected for first drafting wave
 1. `2026-03-15_c27-custo-do-correto-multidimensional.md`
@@ -51,9 +59,12 @@ This trio is enough to establish the central thesis of the adversarial layer wit
 - `CHAT-002_tema-livre-pos-megacontrato.md` remains valuable as supporting substrate.
 - Athena's MCP adversarial material remains too close to active architecture for early inclusion.
 
+### First draft created
+- [Part II Draft — The Adversarial Crucible](./forge-diaries-volume-public-0.1-part-ii-adversarial-crucible-draft.md)
+
 ## Drafting principle for the volume
 The volume should advance by **curated accretion**.
 Not every strong diary becomes a public text directly. Some entries will function as structural sources whose best public life is derivative.
 
 ## Immediate next drafting move
-Draft the first public-facing text for **Part II — The Adversarial Crucible** before forcing closure on the whole volume.
+Draft the opening public-facing text for **Part I — The Constitutional Prologue**, now that Part II has its first chapter draft.
