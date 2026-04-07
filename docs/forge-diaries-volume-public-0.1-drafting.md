@@ -83,9 +83,28 @@ This part should not pretend to reproduce every transfer order in full. Its task
 ### First draft created
 - [Part III Draft — Governance, Memory and Form](./forge-diaries-volume-public-0.1-part-iii-governance-memory-and-form-draft.md)
 
+## Part IV — drafting guidance
+**Part title:** Threshold to Public Language
+
+### Function
+To show the movement by which a private forge becomes capable of public voice without abandoning rigor, proof and proportion.
+
+### Drafting basis
+- `TEMA_LIVRE_ESTABILIZACAO_CONTROLADA_20260329.md`
+- `TEMA_LIVRE_O_CAMINHO_SOBERANO_DA_CHAVE_20260401.md`
+- `TEMA_LIVRE_O_PESO_DA_PROVA_20260401.md`
+- `TEMA_LIVRE_A_FORJA_QUE_OLHA_PARA_SI_MESMA_20260401.md`
+- mapped threshold cluster from the reading notebook and program inventory
+
+### Editorial caution
+This part should avoid premature totalization. It must not pretend full exegesis before the whole late TEMA LIVRE cluster has been read directly. Its job at this stage is to establish the threshold architecture faithfully.
+
+### First draft created
+- [Part IV Draft — Threshold to Public Language](./forge-diaries-volume-public-0.1-part-iv-threshold-to-public-language-draft.md)
+
 ## Drafting principle for the volume
 The volume should advance by **curated accretion**.
 Not every strong diary becomes a public text directly. Some entries will function as structural sources whose best public life is derivative.
 
 ## Immediate next drafting move
-Map the threshold materials of Part IV and decide which late TEMA LIVRE pieces can function as the closing architecture of Volume 0.1.
+Move from chapter drafting toward volume-level cohesion: curator introductions, internal sequencing rhythm and criteria for when Volume 0.1 becomes ready for first assembled review.
