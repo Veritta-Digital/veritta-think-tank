@@ -1,13 +1,8 @@
 # Why Serious AI Governance Must Capture Decision Rationale
 
-**Status:** Refined pilot extraction  
-**Editorial decision:** Publish now  
-**Derived from:** Forge Diaries curation — especially decision-rationale reflections in the private canon
-
-## The missing layer
 Many governance systems become reasonably good at preserving evidence of execution and still remain weak at preserving evidence of judgment.
 
-They can show contracts, tickets, deploy traces, logs, approvals, dashboards and bundles of proof. They can often reconstruct what happened in procedural terms. But when the decisive question appears — *why was this path chosen rather than another?* — the system frequently falls silent.
+They can show contracts, tickets, deploy traces, logs, approvals, dashboards and evidence bundles. They can often reconstruct what happened in procedural terms. But when the decisive question appears — *why was this path chosen rather than another?* — the system frequently falls silent.
 
 That silence is not a minor documentary flaw. It is a structural deficit.
 
