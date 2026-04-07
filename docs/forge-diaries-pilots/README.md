@@ -10,7 +10,7 @@ They exist to test tone, abstraction level and public legibility before wider di
 - [01 — Why Serious AI Governance Must Capture Decision Rationale](./01-why-serious-ai-governance-must-capture-decision-rationale.md)  
   **Decision:** publish now — promoted to the main public essay body.
 - [02 — Governance Does Not Eliminate Freedom](./02-governance-does-not-eliminate-freedom.md)  
-  **Decision:** hold for second pass.
+  **Decision:** publish now after second pass — promoted to the main public essay body.
 - [03 — The Constitutional Prologue of the Forge](./03-the-constitutional-prologue-of-the-forge.md)  
   **Decision:** reserve for Public Volume 0.1.
 

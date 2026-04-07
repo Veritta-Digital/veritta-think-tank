@@ -1,10 +1,5 @@
 # Governance Does Not Eliminate Freedom
 
-**Status:** Second-pass refined pilot extraction  
-**Editorial decision:** Publish now  
-**Derived from:** Forge Diaries curation — especially the freedom/governance dialogue and architectural reflections on order
-
-## The comforting mistake
 One of the most persistent errors in discussions of AI governance is the belief that governance and freedom are natural enemies.
 
 Under that belief, governance is treated as friction, inhibition or bureaucratic weight, while freedom is treated as speed, improvisation and unrestricted room to move.
