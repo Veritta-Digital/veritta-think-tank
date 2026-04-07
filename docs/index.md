@@ -4,25 +4,27 @@ This repository is the public editorial surface of the Verittà Think Tank.
 It is not the sovereign operational HQ of the Verittà ecosystem.
 
 ## What lives here
-- public essays
-- public framework notes
-- glossary for external readers
-- research agenda
-- redacted casebooks and publishable material
+- public essays;
+- public framework notes;
+- glossary and FAQ for external readers;
+- public method and research agenda;
+- redacted casebooks and publishable material.
 
 ## What does not live here
-- raw private diaries
-- operational secrets
-- sensitive topology
-- client-identifiable material
-- sovereign internal source-of-truth documents
+- raw private diaries;
+- operational secrets;
+- sensitive topology;
+- client-identifiable material;
+- sovereign internal source-of-truth documents.
 
 ## Core documents
 - [Manifesto](./manifesto.md)
 - [Source of Truth Map](./source-of-truth-map.md)
+- [Public Method](./public-method.md)
 - [Glossary](./glossary.md)
 - [FAQ](./faq.md)
 - [Research Agenda](./research-agenda.md)
+- [Licensing Direction](./licensing-direction.md)
 - [V-COF Public Constitution](./vcof/vcof-public-constitution.md)
 
 ## Essay series

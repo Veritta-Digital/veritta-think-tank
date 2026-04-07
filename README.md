@@ -1,29 +1,33 @@
 # Verittà Think Tank
 
-Repositório inaugural do think tank da Verittà para AI Governance, Agentic Systems, V-COF e governança operacional de IA.
+Public research and editorial repository for Verittà’s Think Tank on AI Governance, Agentic Systems, and the V-COF framework.
 
-## Missão
-Produzir conhecimento público, auditável e intelectualmente sério sobre:
-- AI Governance operacional
-- Agentic AI com soberania humana no loop
-- Fail-Closed como filosofia de operação
-- Debt Governance, Evidence Maps e trilhas de auditoria
-- O framework V-COF como arquitetura constitucional e operacional
+## Mission
+Produce public, auditable and intellectually serious work on:
+- operational AI governance;
+- agentic systems with human sovereignty in the loop;
+- fail-closed as an operational philosophy;
+- debt governance, evidence maps and audit trails;
+- V-COF as a constitutional and operational architecture.
 
-## Princípios editoriais
-- Nada sensível é publicado sem curadoria e redaction.
-- Diários brutos não são publicados diretamente.
-- Cada texto público deve separar fato, inferência e hipótese.
-- Toda publicação deve indicar escopo, limites e evidência.
+## Start here
+The main public entry point for readers is:
+- [`docs/index.md`](docs/index.md)
 
-## Estrutura inicial
-- `docs/manifesto.md`
-- `docs/policies/publication-policy.md`
-- `docs/policies/redaction-policy.md`
-- `docs/vcof/vcof-public-constitution.md`
-- `docs/series/01-what-operational-ai-governance-looks-like.md`
-- `docs/series/02-fail-closed-and-human-sovereignty.md`
-- `docs/series/03-debt-governance-for-agentic-systems.md`
+## Public-layer principles
+- nothing sensitive is published without curation and redaction;
+- raw forge diaries are never published directly;
+- public material must distinguish, when relevant, fact, inference and hypothesis;
+- this repository does not replace the sovereign internal canon of the Verittà ecosystem.
+
+## Public architecture
+This repository contains:
+- manifesto and public policies;
+- public-facing V-COF notes;
+- glossary and FAQ for external readers;
+- research agenda;
+- essay series;
+- redacted casebooks and publishing templates.
 
 ## Status
-Bootstrap inicial pronto para publicação.
+Public bootstrap active.

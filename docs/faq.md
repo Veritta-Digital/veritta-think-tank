@@ -4,6 +4,10 @@
 No.
 V-COF is a constitutional and operational framework for governed outputs, not a fictional persona layer.
 
+## What does V-COF stand for?
+Publicly and canonically, V-COF stands for **Verittà Cognitive-Operational Framework**.
+Its procedural logic includes a contract-governed layer of operations, but that does not create a second official expansion of the acronym.
+
 ## Does V-COF eliminate human judgment?
 No.
 It is built around human sovereignty, human approval and explicit responsibility.
@@ -13,7 +17,7 @@ No.
 Fail-closed does not mean refusing to think or refusing to investigate.
 It means refusing to proceed silently when critical conditions are unmet.
 
-## Are the forge diaries published here in raw form?
+## Are forge diaries published here in raw form?
 No.
 Raw diaries remain private and are not published directly.
 Only curated, redacted and editorially transformed material belongs in this public repository.
@@ -23,7 +27,7 @@ No.
 The sovereign operational source-of-truth remains in the internal HQ.
 This repository is a public-facing derivative layer.
 
-## Why talk so much about evidence, gates and seals?
+## Why talk so much about contracts, gates, seals and evidence?
 Because agentic systems become dangerous when they scale output without preserving scope, evidence and accountability.
 Governance is not decoration around AI. It is part of the architecture.
 
