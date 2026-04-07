@@ -1,0 +1,42 @@
+# Public Release Readiness
+
+## Purpose
+This note records the first curatorial judgment about which texts in the repository are already suitable for immediate external dissemination and which still merit another editorial pass.
+
+## Release now
+These texts are already strong candidates for immediate public sharing:
+- `docs/about-this-repository.md`
+- `docs/public-method.md`
+- `docs/glossary.md`
+- `docs/faq.md`
+- `docs/research-agenda.md`
+- `docs/licensing-direction.md`
+- `docs/vcof/vcof-public-constitution.md`
+- `docs/vcof/contract-governed-operations.md`
+- `docs/vcof/public-governance-principles.md`
+- `docs/series/04-what-vcof-is-and-what-it-is-not.md`
+- `docs/series/06-operational-ai-governance-vs-policy-only-governance.md`
+- `docs/casebooks/01-from-private-canon-to-public-method.md`
+
+## Release after one more editorial pass
+These texts are already solid, but would benefit from one additional pass for rhetorical rhythm, examples or sharper openings:
+- `docs/series/01-what-operational-ai-governance-looks-like.md`
+- `docs/series/02-fail-closed-and-human-sovereignty.md`
+- `docs/series/03-debt-governance-for-agentic-systems.md`
+- `docs/series/05-why-agentic-systems-need-debt-governance.md`
+- `docs/manifesto.md`
+
+## Hold as supporting infrastructure
+These texts are important, but should be treated as support structure rather than first-line dissemination assets:
+- `docs/source-of-truth-map.md`
+- `docs/policies/publication-policy.md`
+- `docs/policies/redaction-policy.md`
+- `docs/casebooks/template.md`
+- `RELEASE_NOTES_v0.1.md`
+
+## Criterion used
+Readiness here means:
+- conceptually stable;
+- publicly intelligible;
+- bounded enough to avoid overclaiming;
+- aligned with the current public identity of the repository.
