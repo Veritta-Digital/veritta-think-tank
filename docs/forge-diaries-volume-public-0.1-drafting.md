@@ -65,9 +65,27 @@ This trio is enough to establish the central thesis of the adversarial layer wit
 ### First draft created
 - [Part II Draft — The Adversarial Crucible](./forge-diaries-volume-public-0.1-part-ii-adversarial-crucible-draft.md)
 
+## Part III — drafting guidance
+**Part title:** Governance, Memory and Form
+
+### Function
+To connect deliberation, canonical precedence, continuity and public legibility.
+
+### Drafting basis
+- `HUB-006_decision-rationale-capture.md`
+- SoT
+- MEMORIA DIGNIFICADA
+- transfer-order chain as continuity architecture
+
+### Editorial caution
+This part should not pretend to reproduce every transfer order in full. Its task is to extract the public lesson: continuity in serious systems depends on custody, precedence and legible transitions.
+
+### First draft created
+- [Part III Draft — Governance, Memory and Form](./forge-diaries-volume-public-0.1-part-iii-governance-memory-and-form-draft.md)
+
 ## Drafting principle for the volume
 The volume should advance by **curated accretion**.
 Not every strong diary becomes a public text directly. Some entries will function as structural sources whose best public life is derivative.
 
 ## Immediate next drafting move
-Move from drafting the first two parts toward a more explicit map of Part III — Governance, Memory and Form.
+Map the threshold materials of Part IV and decide which late TEMA LIVRE pieces can function as the closing architecture of Volume 0.1.
