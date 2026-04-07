@@ -23,6 +23,9 @@ The reading program begins chronologically and includes archived material whenev
 
 The order is deliberate. A public volume should not begin with mature later-stage reflections while omitting the foundational texts that explain how the forge learned to speak in the first place.
 
+For the working matrix and first pilot candidates, see:
+- [Forge Diaries Reading Notebook](./forge-diaries-reading-notebook.md)
+
 ## Foundational mandatory prologue
 Before the program moves into RED TEAM, SAMURAI or later public-facing threshold texts, it must read and classify the foundational block below.
 
@@ -194,5 +197,6 @@ Authorizes the assembly of the first public curated volume.
 
 ## Current status
 Program opened.
+Reading notebook created.
 No raw diary publication is authorized by this document.
 This file establishes method, scope and curatorial discipline only.

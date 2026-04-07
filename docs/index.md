@@ -9,6 +9,7 @@ It is not the sovereign operational HQ of the Verittà ecosystem.
 - [Public Method](./public-method.md)
 - [Public Release Readiness](./public-release-readiness.md)
 - [Forge Diaries Public Program](./forge-diaries-public-program.md)
+- [Forge Diaries Reading Notebook](./forge-diaries-reading-notebook.md)
 
 ## Core public documents
 - [Manifesto](./manifesto.md)
