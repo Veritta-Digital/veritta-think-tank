@@ -3,47 +3,41 @@
 This repository is the public editorial surface of the Verittà Think Tank.
 It is not the sovereign operational HQ of the Verittà ecosystem.
 
-## Orientation
-- [About This Repository](./about-this-repository.md)
-- [Source of Truth Map](./source-of-truth-map.md)
-- [Public Method](./public-method.md)
-- [Public Release Readiness](./public-release-readiness.md)
-- [Forge Diaries Public Program](./forge-diaries-public-program.md)
-- [Forge Diaries Reading Notebook](./forge-diaries-reading-notebook.md)
-- [Forge Diaries Pilot Drafts](./forge-diaries-pilots/README.md)
-- [Forge Diaries Release Decision](./forge-diaries-release-decision.md)
-- [Forge Diaries Release Wave 01](./forge-diaries-release-wave-01.md)
-- [Forge Diaries — Public Volume 0.1 Architecture](./forge-diaries-volume-public-0.1-architecture.md)
-- [Forge Diaries — Public Volume 0.1 Drafting](./forge-diaries-volume-public-0.1-drafting.md)
-- [Forge Diaries — Assembled Volume 0.1](./forge-diaries-volume-public-0.1/README.md)
-- [Forge Diaries — Consolidated Volume 0.1](./forge-diaries-volume-public-0.1/VOLUME_PUBLIC_0_1_CONSOLIDATED.md)
-- [Forge Diaries — Release Note](./forge-diaries-volume-public-0.1/VOLUME_PUBLIC_0_1_RELEASE_NOTE.md)
-- [Forge Diaries — Publication Packaging](./forge-diaries-volume-public-0.1/PUBLICATION_PACKAGING.md)
-- [Forge Diaries — LinkedIn Package](./forge-diaries-volume-public-0.1/LINKEDIN/README.md)
-- [Forge Diaries — Portuguese Public Layer](./forge-diaries-volume-public-0.1/PT_BR/README.md)
+## Canonical structure
+- [Foundations](./foundations/README.md)
+- [Essays](./essays/README.md)
+- [Forge Diaries](./forge-diaries/README.md)
+- [Outward Publishing](./outward/README.md)
 
-## Core public documents
-- [Manifesto](./manifesto.md)
-- [Glossary](./glossary.md)
-- [FAQ](./faq.md)
-- [Research Agenda](./research-agenda.md)
-- [Licensing Direction](./licensing-direction.md)
+## Current canonical paths
+### Foundations
+- [About This Repository](./foundations/about-this-repository.md)
+- [FAQ](./foundations/faq.md)
+- [Glossary](./foundations/glossary.md)
+- [Manifesto](./foundations/manifesto.md)
+- [Public Method](./foundations/public-method.md)
+- [Public Release Readiness](./foundations/public-release-readiness.md)
+- [Research Agenda](./foundations/research-agenda.md)
+- [Source of Truth Map](./foundations/source-of-truth-map.md)
+- [Licensing Direction](./foundations/licensing-direction.md)
 
-## V-COF notes
+### V-COF and policies
 - [V-COF Public Constitutional Note](./vcof/vcof-public-constitution.md)
 - [Contract-Governed Operations in V-COF](./vcof/contract-governed-operations.md)
 - [Public Governance Principles](./vcof/public-governance-principles.md)
+- [Policies](./policies/)
 
-## Essay series
-- [01 — What Operational AI Governance Looks Like](./series/01-what-operational-ai-governance-looks-like.md)
-- [02 — Fail-Closed and Human Sovereignty](./series/02-fail-closed-and-human-sovereignty.md)
-- [03 — Debt Governance for Agentic Systems](./series/03-debt-governance-for-agentic-systems.md)
-- [04 — What V-COF Is — And What It Is Not](./series/04-what-vcof-is-and-what-it-is-not.md)
-- [05 — Why Agentic Systems Need Debt Governance](./series/05-why-agentic-systems-need-debt-governance.md)
-- [06 — Operational AI Governance vs Policy-Only Governance](./series/06-operational-ai-governance-vs-policy-only-governance.md)
-- [07 — Why Serious AI Governance Must Capture Decision Rationale](./series/07-why-serious-ai-governance-must-capture-decision-rationale.md)
-- [08 — Governance Does Not Eliminate Freedom](./series/08-governance-does-not-eliminate-freedom.md)
+### Essays
+- [Essay Series (current files)](./series/)
 
-## Casebooks
-- [01 — From Private Canon to Public Method](./casebooks/01-from-private-canon-to-public-method.md)
-- [Template](./casebooks/template.md)
+### Forge Diaries
+- [Program](./forge-diaries/program/README.md)
+- [Assembled Volume 0.1](./forge-diaries-volume-public-0.1/README.md)
+- [Consolidated Volume 0.1](./forge-diaries-volume-public-0.1/VOLUME_PUBLIC_0_1_CONSOLIDATED.md)
+- [Release Note](./forge-diaries-volume-public-0.1/VOLUME_PUBLIC_0_1_RELEASE_NOTE.md)
+- [Portuguese Public Layer](./forge-diaries-volume-public-0.1/PT_BR/README.md)
+- [LinkedIn Package](./forge-diaries-volume-public-0.1/LINKEDIN/README.md)
+
+## Migration note
+Older root-level `docs/*.md` files related to foundations and Forge Diaries are being preserved as tombstones or migration pointers where needed.
+The canonical navigation should now begin from the four top-level zones above.
