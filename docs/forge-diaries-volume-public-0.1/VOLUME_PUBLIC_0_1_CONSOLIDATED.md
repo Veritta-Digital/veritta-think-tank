@@ -169,4 +169,22 @@ A forge does not become public merely because it decides to publish. It becomes 
 ### Threshold basis
 - late TEMA LIVRE stabilization / sovereignty / proof / reflexivity cluster
 
+---
+
+## Essays Promoted — Satellite Readings
+
+### 07 — Why Serious AI Governance Must Capture Decision Rationale
+This essay remains outside the numbered chapter spine, but belongs to the same public editorial project as a satellite reading. It deepens **Part III — Governance, Memory and Form** by isolating one of the volume's most transferable insights: governance is incomplete if it preserves execution while losing the reasons that made execution legitimate.
+
+Canonical essay:
+- `docs/series/07-why-serious-ai-governance-must-capture-decision-rationale.md`
+
+### 08 — Governance Does Not Eliminate Freedom
+This essay remains outside the numbered chapter spine, but belongs to the same public editorial project as a satellite reading. It deepens **Part II — The Adversarial Crucible** by isolating one of the central tensions of the corpus: the difference between governed freedom and directionless arbitrariness.
+
+Canonical essay:
+- `docs/series/08-governance-does-not-eliminate-freedom.md`
+
+---
+
 **RAW != PUBLICÁVEL**

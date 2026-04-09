@@ -16,12 +16,22 @@ This note records the Archivarium Prime organization of **Forge Diaries — Publ
 - `docs/series/07-why-serious-ai-governance-must-capture-decision-rationale.md`
 - `docs/series/08-governance-does-not-eliminate-freedom.md`
 
+### Unified project integration
+These promoted essays are not part of the numbered chapter spine, but they are part of the same public editorial project. They should be read as **satellite essays** orbiting the volume:
+- essay 07 deepens Part III by isolating decision rationale as operational epistemology;
+- essay 08 deepens Part II by isolating the governance/freedom tension in public-facing form.
+
 ### Supporting notes
 - `SUPPORTING_NOTES/editorial-method-note.md`
 - `SUPPORTING_NOTES/release-positioning-note.md`
 
 ### Appendices
 - `APPENDICES/appendix-a-source-notes.md`
+
+### Essays promoted layer
+- `ESSAYS_PROMOTED/README.md`
+- `ESSAYS_PROMOTED/07-why-serious-ai-governance-must-capture-decision-rationale.md`
+- `ESSAYS_PROMOTED/08-governance-does-not-eliminate-freedom.md`
 
 ## Reading order
 1. Curator's Introduction
@@ -30,6 +40,7 @@ This note records the Archivarium Prime organization of **Forge Diaries — Publ
 4. Part III — Governance, Memory and Form
 5. Part IV — Threshold to Public Language
 6. Appendix A — Source Notes
+7. Essays Promoted — Satellite Readings
 
 ## Editorial rhythm
 - Introduction: threshold and admissibility
@@ -38,3 +49,4 @@ This note records the Archivarium Prime organization of **Forge Diaries — Publ
 - Part III: custody and continuity
 - Part IV: passage and public voice
 - Appendix: transparency without overexposure
+- Satellite essays: selective thematic deepening beyond the chapter spine

@@ -16,6 +16,7 @@ It is not the sovereign operational HQ of the Verittà ecosystem.
 - [Forge Diaries — Public Volume 0.1 Architecture](./forge-diaries-volume-public-0.1-architecture.md)
 - [Forge Diaries — Public Volume 0.1 Drafting](./forge-diaries-volume-public-0.1-drafting.md)
 - [Forge Diaries — Assembled Volume 0.1](./forge-diaries-volume-public-0.1/README.md)
+- [Forge Diaries — Consolidated Volume 0.1](./forge-diaries-volume-public-0.1/VOLUME_PUBLIC_0_1_CONSOLIDATED.md)
 
 ## Core public documents
 - [Manifesto](./manifesto.md)
