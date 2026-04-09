@@ -14,6 +14,8 @@ Some are truths of order.
 Some are truths of human contact.
 Some are truths of material substrate.
 
+This is the first constitutional lesson of the forge: durability begins when capability accepts distinction.
+
 ## ANUBIS — execution, continuity and the cost of truth
 The executor's perspective grounds the forge in governed action.
 
