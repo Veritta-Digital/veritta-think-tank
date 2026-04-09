@@ -21,6 +21,14 @@ These promoted essays are not part of the numbered chapter spine, but they are p
 - essay 07 deepens Part III by isolating decision rationale as operational epistemology;
 - essay 08 deepens Part II by isolating the governance/freedom tension in public-facing form.
 
+### Portuguese public layer
+- `PT_BR/README.md`
+- `PT_BR/curators-introduction-short-pt-br.md`
+- `PT_BR/curators-introduction-long-pt-br.md`
+- `PT_BR/essay-07-pt-br.md`
+- `PT_BR/essay-08-pt-br.md`
+- `PT_BR/BILINGUAL_PUBLIC_LAYER_NOTE.md`
+
 ### Supporting notes
 - `SUPPORTING_NOTES/editorial-method-note.md`
 - `SUPPORTING_NOTES/release-positioning-note.md`
@@ -41,6 +49,7 @@ These promoted essays are not part of the numbered chapter spine, but they are p
 5. Part IV — Threshold to Public Language
 6. Appendix A — Source Notes
 7. Essays Promoted — Satellite Readings
+8. Portuguese Public Layer
 
 ## Editorial rhythm
 - Introduction: threshold and admissibility
@@ -50,3 +59,4 @@ These promoted essays are not part of the numbered chapter spine, but they are p
 - Part IV: passage and public voice
 - Appendix: transparency without overexposure
 - Satellite essays: selective thematic deepening beyond the chapter spine
+- Portuguese layer: public resonance and circulation in the Brazilian context
