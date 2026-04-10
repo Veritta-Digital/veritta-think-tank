@@ -13,6 +13,8 @@ They remain as supporting notes because they still provide curatorial context, d
   - promoted into the canonical essay body at `docs/essays/08-governance-does-not-eliminate-freedom.md`
 - [03 - The Constitutional Prologue of the Forge](./03-the-constitutional-prologue-of-the-forge.md)
   - retained as supporting substrate for the canonical chapter at `../canonical/01-the-constitutional-prologue.en.md`
+- [Editorial Method Note](./editorial-method-note.md)
+- [Release Positioning Note](./release-positioning-note.md)
 
 ## Editorial rule
 Supporting notes may preserve drafting lineage, but they do not override:

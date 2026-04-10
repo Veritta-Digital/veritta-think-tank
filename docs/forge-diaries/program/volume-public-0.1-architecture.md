@@ -1,9 +1,3 @@
-<<<<<<<< HEAD:docs/forge-diaries-volume-public-0.1-architecture.md
-# Tombstone
-
-Canonical location moved to:
-- `docs/forge-diaries/program/volume-public-0.1-architecture.md`
-========
 # Forge Diaries - Public Volume 0.1 Architecture
 
 ## Working title
@@ -87,4 +81,3 @@ The volume's canonical home is now:
 ## Immediate next step
 Use this architecture to guide the next drafting wave rather than to force premature closure.
 Volume 0.1 should emerge by curated accretion, not by brute aggregation.
->>>>>>>> 3f2bbd3 (reorg: move docs into canonical foundations, essays, and forge-diaries zones):docs/forge-diaries/program/volume-public-0.1-architecture.md

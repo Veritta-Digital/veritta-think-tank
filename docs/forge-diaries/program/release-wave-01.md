@@ -1,9 +1,5 @@
-# Tombstone
+# Forge Diaries Release Wave 01
 
-<<<<<<<< HEAD:docs/forge-diaries-release-wave-01.md
-Canonical location moved to:
-- `docs/forge-diaries/program/release-wave-01.md`
-========
 ## Purpose
 This note records the first release wave derived from the Forge Diaries editorial program.
 
@@ -24,4 +20,3 @@ These texts were selected because they combine:
 ## Editorial posture of Release Wave 01
 This wave does not attempt to represent the totality of the diaries.
 Its function is to establish the first public derivative voice of the Forge Diaries program.
->>>>>>>> 3f2bbd3 (reorg: move docs into canonical foundations, essays, and forge-diaries zones):docs/forge-diaries/program/release-wave-01.md

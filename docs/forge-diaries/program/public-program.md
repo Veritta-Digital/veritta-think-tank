@@ -1,9 +1,5 @@
-# Tombstone
+# Forge Diaries Public Program
 
-<<<<<<<< HEAD:docs/forge-diaries-public-program.md
-Canonical location moved to:
-- `docs/forge-diaries/program/public-program.md`
-========
 ## Purpose
 This document establishes the public editorial program for the future publication of selected writings derived from the **Diários da Forja** corpus.
 
@@ -204,4 +200,3 @@ Program opened.
 Reading notebook created.
 No raw diary publication is authorized by this document.
 This file establishes method, scope and curatorial discipline only.
->>>>>>>> 3f2bbd3 (reorg: move docs into canonical foundations, essays, and forge-diaries zones):docs/forge-diaries/program/public-program.md

@@ -1,9 +1,5 @@
-# Tombstone
+# Public Release Readiness
 
-<<<<<<<< HEAD:docs/public-release-readiness.md
-Canonical location moved to:
-- `docs/foundations/public-release-readiness.md`
-========
 ## Purpose
 This note records the first curatorial judgment about which texts in the repository are already suitable for immediate external dissemination and which still merit another editorial pass.
 
@@ -44,4 +40,3 @@ Readiness here means:
 - publicly intelligible;
 - bounded enough to avoid overclaiming;
 - aligned with the current public identity of the repository.
->>>>>>>> 3f2bbd3 (reorg: move docs into canonical foundations, essays, and forge-diaries zones):docs/foundations/public-release-readiness.md
