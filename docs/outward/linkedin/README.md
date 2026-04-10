@@ -1,9 +1,6 @@
-# LinkedIn
+# LinkedIn Outward
 
-This folder is reserved as the canonical outward lane for LinkedIn publication assets.
+This folder is the canonical home for LinkedIn-facing outward packets derived from the public documentation body.
 
-## Current note
-The active LinkedIn package currently remains under:
-- `../../forge-diaries-volume-public-0.1/LINKEDIN/`
-
-This folder is established now so future outward assets can move here under a cleaner top-level architecture.
+No finalized LinkedIn packet is published yet.
+When created, channel material should live here rather than inside editorial object folders or legacy volume-local outward folders.
