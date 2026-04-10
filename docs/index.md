@@ -3,6 +3,15 @@
 This repository is the public editorial surface of the Veritta Think Tank.
 It is not the sovereign operational HQ of the Veritta ecosystem.
 
+## Placement Convention
+- foundations are created in [`./foundations/`](./foundations/README.md)
+- essays are created in [`./essays/`](./essays/README.md)
+- Forge Diaries program governance is created in [`./forge-diaries/program/`](./forge-diaries/program/README.md)
+- volume materials are created in [`./forge-diaries/volume-public-0.1/`](./forge-diaries/volume-public-0.1/README.md)
+- outward channel material is created in [`./outward/linkedin/`](./outward/linkedin/README.md)
+
+`docs/` root is guarded so that only `index.md` may exist as a Markdown file at that level.
+
 ## Foundations
 - [Foundations README](./foundations/README.md)
 - [About This Repository](./foundations/about-this-repository.md)

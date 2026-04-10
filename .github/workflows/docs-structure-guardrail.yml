@@ -1,0 +1,26 @@
+name: docs-structure-guardrail
+
+on:
+  push:
+    paths:
+      - "docs/**"
+      - "README.md"
+      - "scripts/check-docs-structure.ps1"
+      - ".github/workflows/docs-structure-guardrail.yml"
+  pull_request:
+    paths:
+      - "docs/**"
+      - "README.md"
+      - "scripts/check-docs-structure.ps1"
+      - ".github/workflows/docs-structure-guardrail.yml"
+
+jobs:
+  guardrail:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate docs root structure
+        shell: pwsh
+        run: ./scripts/check-docs-structure.ps1

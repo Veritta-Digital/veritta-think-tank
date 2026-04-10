@@ -19,6 +19,15 @@ The main public entry point for readers is:
 For a concise orientation note, see:
 - [`docs/foundations/about-this-repository.md`](docs/foundations/about-this-repository.md)
 
+## Document placement convention
+- foundations are created in [`docs/foundations/`](docs/foundations/README.md)
+- essays are created in [`docs/essays/`](docs/essays/README.md)
+- Forge Diaries program governance is created in [`docs/forge-diaries/program/`](docs/forge-diaries/program/README.md)
+- volume materials are created in [`docs/forge-diaries/volume-public-0.1/`](docs/forge-diaries/volume-public-0.1/README.md)
+- outward channel material is created in [`docs/outward/linkedin/`](docs/outward/linkedin/README.md)
+
+The repository now includes a structural guardrail in [`scripts/check-docs-structure.ps1`](scripts/check-docs-structure.ps1) to block new loose `.md` files in `docs/` root, except for `docs/index.md`.
+
 ## Public-layer principles
 - nothing sensitive is published without curation and redaction;
 - raw forge diaries are never published directly;
