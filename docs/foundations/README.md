@@ -1,21 +1,14 @@
 # Foundations
 
-This folder contains the structural, transversal and relatively stable public documents of the Verittà Think Tank.
+This folder contains stable, transversal documents that explain the public identity and operating limits of the repository.
 
-## Scope
-- repository orientation
-- public glossary and FAQ
-- manifesto
-- public method
-- release readiness
-- research agenda
-- source-of-truth map
-- licensing direction
-
-## Related folders
-- `../vcof/` — public V-COF notes
-- `../policies/` — publication and redaction policies
-
-## Canonical rule
-When a document exists both here and in an older root-level location, the canonical path is the one inside `foundations/`.
-Older root-level copies should be treated as tombstones or migration pointers.
+## Included documents
+- [About This Repository](./about-this-repository.md)
+- [FAQ](./faq.md)
+- [Glossary](./glossary.md)
+- [Licensing Direction](./licensing-direction.md)
+- [Manifesto](./manifesto.md)
+- [Public Method](./public-method.md)
+- [Public Release Readiness](./public-release-readiness.md)
+- [Research Agenda](./research-agenda.md)
+- [Source of Truth Map](./source-of-truth-map.md)

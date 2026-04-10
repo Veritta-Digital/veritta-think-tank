@@ -1,43 +1,51 @@
 # Documentation Index
 
-This repository is the public editorial surface of the Verittà Think Tank.
-It is not the sovereign operational HQ of the Verittà ecosystem.
+This repository is the public editorial surface of the Veritta Think Tank.
+It is not the sovereign operational HQ of the Veritta ecosystem.
 
-## Canonical structure
-- [Foundations](./foundations/README.md)
-- [Essays](./essays/README.md)
-- [Forge Diaries](./forge-diaries/README.md)
-- [Outward Publishing](./outward/README.md)
-
-## Current canonical paths
-### Foundations
+## Foundations
+- [Foundations README](./foundations/README.md)
 - [About This Repository](./foundations/about-this-repository.md)
-- [FAQ](./foundations/faq.md)
-- [Glossary](./foundations/glossary.md)
-- [Manifesto](./foundations/manifesto.md)
+- [Source of Truth Map](./foundations/source-of-truth-map.md)
 - [Public Method](./foundations/public-method.md)
 - [Public Release Readiness](./foundations/public-release-readiness.md)
+- [Manifesto](./foundations/manifesto.md)
+- [Glossary](./foundations/glossary.md)
+- [FAQ](./foundations/faq.md)
 - [Research Agenda](./foundations/research-agenda.md)
-- [Source of Truth Map](./foundations/source-of-truth-map.md)
 - [Licensing Direction](./foundations/licensing-direction.md)
 
-### V-COF and policies
-- [V-COF Public Constitutional Note](./vcof/vcof-public-constitution.md)
+## Essays
+- [Essays README](./essays/README.md)
+- [07 - Why Serious AI Governance Must Capture Decision Rationale](./essays/07-why-serious-ai-governance-must-capture-decision-rationale.md)
+- [08 - Governance Does Not Eliminate Freedom](./essays/08-governance-does-not-eliminate-freedom.md)
+
+## Forge Diaries
+- [Forge Diaries README](./forge-diaries/README.md)
+- [Program README](./forge-diaries/program/README.md)
+- [Public Program](./forge-diaries/program/public-program.md)
+- [Reading Notebook](./forge-diaries/program/reading-notebook.md)
+- [Release Decision](./forge-diaries/program/release-decision.md)
+- [Release Wave 01](./forge-diaries/program/release-wave-01.md)
+- [Volume Public 0.1 README](./forge-diaries/volume-public-0.1/README.md)
+- [Volume Public 0.1 Assembly Map](./forge-diaries/volume-public-0.1/ASSEMBLY_MAP.md)
+- [Volume Public 0.1 Packaging](./forge-diaries/volume-public-0.1/PUBLICATION_PACKAGING.md)
+- [Volume Public 0.1 Consolidated EN](./forge-diaries/volume-public-0.1/VOLUME_PUBLIC_0_1_CONSOLIDATED.en.md)
+- [Volume Public 0.1 Consolidated PT-BR](./forge-diaries/volume-public-0.1/VOLUME_PUBLIC_0_1_CONSOLIDATED.pt-br.md)
+
+## Outward
+- [LinkedIn Outward README](./outward/linkedin/README.md)
+
+## Policies
+- [Publication Policy](./policies/publication-policy.md)
+- [Redaction Policy](./policies/redaction-policy.md)
+
+## V-COF
+- [V-COF Public Constitution](./vcof/vcof-public-constitution.md)
 - [Contract-Governed Operations in V-COF](./vcof/contract-governed-operations.md)
 - [Public Governance Principles](./vcof/public-governance-principles.md)
-- [Policies](./policies/)
 
-### Essays
-- [Essay Series (current files)](./series/)
-
-### Forge Diaries
-- [Program](./forge-diaries/program/README.md)
-- [Assembled Volume 0.1](./forge-diaries-volume-public-0.1/README.md)
-- [Consolidated Volume 0.1](./forge-diaries-volume-public-0.1/VOLUME_PUBLIC_0_1_CONSOLIDATED.md)
-- [Release Note](./forge-diaries-volume-public-0.1/VOLUME_PUBLIC_0_1_RELEASE_NOTE.md)
-- [Portuguese Public Layer](./forge-diaries-volume-public-0.1/PT_BR/README.md)
-- [LinkedIn Package](./forge-diaries-volume-public-0.1/LINKEDIN/README.md)
-
-## Migration note
-Older root-level `docs/*.md` files related to foundations and Forge Diaries are being preserved as tombstones or migration pointers where needed.
-The canonical navigation should now begin from the four top-level zones above.
+## Casebooks
+- [Casebooks README](./casebooks/README.md)
+- [01 - From Private Canon to Public Method](./casebooks/01-from-private-canon-to-public-method.md)
+- [Template](./casebooks/template.md)

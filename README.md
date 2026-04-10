@@ -17,7 +17,7 @@ The main public entry point for readers is:
 - [`docs/index.md`](docs/index.md)
 
 For a concise orientation note, see:
-- [`docs/about-this-repository.md`](docs/about-this-repository.md)
+- [`docs/foundations/about-this-repository.md`](docs/foundations/about-this-repository.md)
 
 ## Public-layer principles
 - nothing sensitive is published without curation and redaction;

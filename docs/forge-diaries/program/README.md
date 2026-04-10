@@ -1,15 +1,11 @@
 # Forge Diaries Program
 
-This folder contains the public governance and curatorial program documents of the Forge Diaries line.
+This folder contains the public governance and sequencing notes for the Forge Diaries program.
 
-## Contents
-- public program
-- reading notebook
-- release decision
-- release wave 01
-- volume architecture
-- volume drafting
-
-## Canonical rule
-When a document exists both here and at an older root-level `docs/forge-diaries-*` path, this folder is the canonical location.
-Older root-level copies should be treated as tombstones or migration pointers.
+## Program documents
+- [Public Program](./public-program.md)
+- [Reading Notebook](./reading-notebook.md)
+- [Release Decision](./release-decision.md)
+- [Release Wave 01](./release-wave-01.md)
+- [Volume Public 0.1 Architecture](./volume-public-0.1-architecture.md)
+- [Volume Public 0.1 Drafting](./volume-public-0.1-drafting.md)

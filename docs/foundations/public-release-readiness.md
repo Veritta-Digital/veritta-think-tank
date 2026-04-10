@@ -1,5 +1,9 @@
-# Public Release Readiness
+# Tombstone
 
+<<<<<<<< HEAD:docs/public-release-readiness.md
+Canonical location moved to:
+- `docs/foundations/public-release-readiness.md`
+========
 ## Purpose
 This note records the first curatorial judgment about which texts in the repository are already suitable for immediate external dissemination and which still merit another editorial pass.
 
@@ -14,16 +18,16 @@ These texts are already strong candidates for immediate public sharing:
 - `docs/vcof/vcof-public-constitution.md`
 - `docs/vcof/contract-governed-operations.md`
 - `docs/vcof/public-governance-principles.md`
-- `docs/series/04-what-vcof-is-and-what-it-is-not.md`
-- `docs/series/06-operational-ai-governance-vs-policy-only-governance.md`
+- `docs/essays/04-what-vcof-is-and-what-it-is-not.md`
+- `docs/essays/06-operational-ai-governance-vs-policy-only-governance.md`
 - `docs/casebooks/01-from-private-canon-to-public-method.md`
 
 ## Release after one more editorial pass
 These texts are already solid, but would benefit from one additional pass for rhetorical rhythm, examples or sharper openings:
-- `docs/series/01-what-operational-ai-governance-looks-like.md`
-- `docs/series/02-fail-closed-and-human-sovereignty.md`
-- `docs/series/03-debt-governance-for-agentic-systems.md`
-- `docs/series/05-why-agentic-systems-need-debt-governance.md`
+- `docs/essays/01-what-operational-ai-governance-looks-like.md`
+- `docs/essays/02-fail-closed-and-human-sovereignty.md`
+- `docs/essays/03-debt-governance-for-agentic-systems.md`
+- `docs/essays/05-why-agentic-systems-need-debt-governance.md`
 - `docs/foundations/manifesto.md`
 
 ## Hold as supporting infrastructure
@@ -40,3 +44,4 @@ Readiness here means:
 - publicly intelligible;
 - bounded enough to avoid overclaiming;
 - aligned with the current public identity of the repository.
+>>>>>>>> 3f2bbd3 (reorg: move docs into canonical foundations, essays, and forge-diaries zones):docs/foundations/public-release-readiness.md
