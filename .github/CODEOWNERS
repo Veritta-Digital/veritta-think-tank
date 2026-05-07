@@ -1,0 +1,20 @@
+# CODEOWNERS - veritta-think-tank
+# Determinacao do Juiz, 2026-05-07.
+# Governance roles:
+# - Admin manager: CODEX JANUS
+# - HERMES SPECTRUM: write-preserved by Judge directive outside CODEOWNERS.
+#
+# GitHub team mapping used here:
+# - CODEX JANUS / Torre architecture custody: @Veritta-Digital/architect-tower
+#
+# Note: CODEOWNERS routes review requests. Real admin/member/write permissions
+# must remain enforced in GitHub Teams and organization policy.
+
+* @Veritta-Digital/architect-tower
+
+/.github/ @Veritta-Digital/architect-tower
+/docs/ @Veritta-Digital/architect-tower
+/scripts/ @Veritta-Digital/architect-tower
+README.md @Veritta-Digital/architect-tower
+CONTRIBUTING.md @Veritta-Digital/architect-tower
+EDITORIAL_STANDARD.md @Veritta-Digital/architect-tower
