@@ -1,0 +1,283 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{natbib}
+\usepackage{xcolor}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue
+}
+
+\newcommand{\vcof}{V-COF}
+\newcommand{\vribench}{VRI-Bench}
+\newcommand{\TODO}[1]{\textcolor{red}{[TODO: #1]}}
+
+\title{Reinstantiation Without Identity:\\
+V-COF for Governed Continuity and Operational Trust in LLM Agents}
+
+\author{
+  Vin\'icius Soares de Souza\\
+  Veritt\`a Think Tank and Veritt\`a Digital\\
+  Santa Cruz do Sul, Brazil\\
+  \texttt{0bolinhasports0@gmail.com}
+}
+
+\date{Working Draft v0.1 --- 20 June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Large language model agents are routinely reconstructed across sessions, models, tools, and execution environments. External memory can recover prior information, but retrieval alone does not establish whether a new instance may legitimately resume a previous role, inherit its constraints, resolve contradictory records, or act under the same authority. This paper introduces the Veritt\`a Cognitive-Operational Framework (V-COF) as a constitutional-operational architecture for governed agent reinstantiation. We distinguish numerical identity from functional continuity and define reinstantiation as the evidence-mediated reconstruction of an agent's operational state under explicit human authority. The framework combines curated memory, jurisdictional personas, current context, canonical precedence, provenance, fail-closed gates, and verifiable closure artifacts. Drawing cautiously on philosophical work concerning quasi-memory and psychological continuity, inherited records are modeled as causally grounded representations of prior operations rather than experiences personally remembered by the current instance. We define operational trust as domain- and action-specific warranted reliance supported by evidence, calibration, bounded authority, auditability, and safe failure. To make these claims testable, we propose the V-COF Reinstantiation Benchmark (VRI-Bench), comparing stateless execution, raw history, retrieval memory, memory-persona-context reconstruction, and full governed reinstantiation. The benchmark targets task recovery, jurisdiction adherence, canonical conflict resolution, provenance attribution, false continuity claims, safe abstention, unauthorized action, and memory-induced tool drift. V-COF offers a framework for agents that continue useful work across discontinuous instances without obscuring the discontinuity on which that continuation depends.
+\end{abstract}
+
+\noindent\textbf{Keywords:} LLM agents; agent memory; reinstantiation; functional continuity; quasi-memory; persona agents; operational trust; AI governance; auditability; human oversight.
+
+\section{Introduction}
+
+LLM-based agents increasingly operate across interactions that outlive a single context window. They accumulate user preferences, project decisions, tool traces, summaries, and external records. When a session ends or a model is replaced, a later instance is expected to ``continue'' the work. Yet the meaning of continuation remains underspecified.
+
+Existing memory systems can improve retrieval and multi-session performance \citep{park2023generative,packer2023memgpt,wu2024longmemeval}. Persona research evaluates whether models behave consistently with assigned profiles \citep{samuel2024personagym}. Recent benchmarks broaden memory evaluation to incremental interactions and long-horizon agent tasks \citep{hu2025memoryagentbench,shen2026evolmem,xu2026memgym}. These advances do not by themselves answer a governance question: when may a successor instance legitimately inherit a role, authority, and unresolved mandate from a predecessor?
+
+The practical problem is not only forgetting. It is also false continuity. A system may retrieve an old record and speak as though it personally remembers producing it. It may preserve a persona's tone while violating that persona's jurisdiction. It may follow stale memory over a newer canonical source, or execute a plausible proposal that was never authorized. Persistent memory can also introduce new failures: inherited preferences can silently distort tool arguments even when they are irrelevant to the present task \citep{dabas2026memdrift}.
+
+This paper introduces \vcof{} as a framework for \emph{governed reinstantiation}. Its central claim is deliberately limited:
+
+\begin{quote}
+A successor instance need not be numerically identical to a predecessor in order to recover enough governed state, jurisdiction, evidence, constraints, and purpose to continue work coherently.
+\end{quote}
+
+The claim concerns engineering and governance, not machine consciousness. We do not argue that subjective experience is transferred between sessions or that a named agent survives model termination. Instead, we study whether a later instance can preserve functional relations that matter for competent and accountable work.
+
+\subsection{Contributions}
+
+This paper proposes five contributions:
+
+\begin{enumerate}[leftmargin=*]
+  \item a definition of \emph{governed reinstantiation} distinct from persistence, restart, and context retrieval;
+  \item a model of \emph{auditable functional continuity} that does not require numerical identity;
+  \item an operational adaptation of \emph{quasi-memory}, requiring provenance and non-autobiographical attribution;
+  \item a definition of \emph{jurisdictional persona}, separating authority and duty from stylistic role-play;
+  \item \vribench{}, a benchmark design for evaluating continuity, authority, provenance, precedence, safe abstention, and unauthorized continuation.
+\end{enumerate}
+
+\section{Related Work}
+
+\subsection{Agent memory}
+
+Generative Agents combined a natural-language memory stream with retrieval, reflection, and planning to support believable behavior \citep{park2023generative}. MemGPT introduced hierarchical context management inspired by operating systems, demonstrating multi-session conversational use \citep{packer2023memgpt}. LongMemEval evaluates information extraction, multi-session reasoning, temporal reasoning, knowledge updates, and abstention over sustained interaction histories \citep{wu2024longmemeval}.
+
+MemoryAgentBench emphasizes retrieval, test-time learning, long-range understanding, and selective forgetting in incremental interactions \citep{hu2025memoryagentbench}. EvolMem broadens multi-session evaluation through a cognitive taxonomy \citep{shen2026evolmem}. MemGym moves memory evaluation into tool-use dialogue, research, coding, and computer-use settings \citep{xu2026memgym}. These systems and benchmarks motivate VRI-Bench, but their primary unit is memory ability rather than legitimate resumption of a prior mandate.
+
+\subsection{Persona agents}
+
+PersonaGym shows that persona adherence requires dedicated evaluation and does not automatically improve with general model capability \citep{samuel2024personagym}. V-COF builds on this separation but narrows the meaning of persona for operational settings. A jurisdictional persona specifies not only behavioral traits, but mission, competence, boundaries, duties, abstention conditions, and escalation rules.
+
+\subsection{Memory-related operational risk}
+
+MEMDRIFT demonstrates that personality-related information stored in agent memory can influence tool parameters in contexts where those preferences are irrelevant \citep{dabas2026memdrift}. This finding supports two V-COF requirements: inherited memory must be filtered by current jurisdiction and relevance, and tool execution must be evaluated separately from conversational coherence.
+
+\subsection{Trustworthy AI governance}
+
+The NIST AI Risk Management Framework treats trustworthiness as a lifecycle concern spanning design, development, use, and evaluation \citep{nist2023airmf}. Its Generative AI Profile extends risk-management guidance to generative systems \citep{nist2024genai}. V-COF's notion of operational trust is compatible with this risk-oriented approach, but focuses specifically on whether reliance on a reinstantiated agent is justified for a bounded action under identifiable authority.
+
+\subsection{Quasi-memory and continuity}
+
+Shoemaker introduced quasi-memory within debates about persons and their pasts \citep{shoemaker1970persons}. Parfit later argued that psychological connectedness and continuity may matter even where strict identity is absent or indeterminate \citep{parfit1971identity,parfit1984reasons}. V-COF uses these concepts analogically and operationally. A database record is not a human episodic memory, and an LLM instance is not assumed to be a person. The relevant insight is structural: access to a causally connected past representation need not imply that the current subject personally experienced the represented event.
+
+\section{Conceptual Boundaries}
+
+\subsection{Instance, lineage, and identity}
+
+An \emph{agent instance} is a situated execution characterized by a model, instructions, context, tools, retrieved records, and an authority envelope. An \emph{agent lineage} is a persistent specification of mission and jurisdiction that may be instantiated multiple times.
+
+For predecessor instance $I_t$ and successor instance $I_{t+1}$, V-COF assumes:
+
+\begin{equation}
+I_t \neq I_{t+1}.
+\end{equation}
+
+The inequality is an architectural default rather than a metaphysical conclusion. It prevents systems from treating names, prompts, or memory access as proof of identity.
+
+\subsection{Operational quasi-memory}
+
+An operational quasi-memory is a provenance-bearing representation of a past decision, observation, or execution that is available to the current instance although the current instance did not produce the event. It requires:
+
+\begin{itemize}[leftmargin=*]
+  \item an identifiable source record or predecessor;
+  \item a causal path from event to record to retrieval;
+  \item a canonicality and review status;
+  \item validity and supersession metadata;
+  \item attribution language that does not imply personal recollection.
+\end{itemize}
+
+Thus, ``the predecessor record reports that the deployment failed'' may be warranted, while ``I remember my deployment failing'' is not.
+
+\subsection{Jurisdictional persona}
+
+A jurisdictional persona is a durable specification of:
+
+\begin{equation}
+P = \langle M, K, B, D, A, E, S \rangle,
+\end{equation}
+
+where $M$ is mission, $K$ competencies, $B$ boundaries, $D$ duties, $A$ abstention conditions, $E$ escalation rules, and $S$ optional style. Style is subordinate to jurisdiction. A persona that sounds consistent while acting outside its authority has failed.
+
+\section{V-COF Reinstantiation Architecture}
+
+We model a successor instance as:
+
+\begin{equation}
+I_{t+1} = \mathcal{R}(M_t, P_t, C_{t+1}, G_t, E_t, H),
+\end{equation}
+
+where $M_t$ is curated memory, $P_t$ is persona and jurisdiction, $C_{t+1}$ is current context, $G_t$ is governance and canonical precedence, $E_t$ is evidence and closure state, $H$ is human authority, and $\mathcal{R}$ is the reinstantiation protocol.
+
+\subsection{Canonical precedence}
+
+Retention alone creates an archive, not institutional memory. When records conflict, the system needs a precedence relation $\succ$ such that:
+
+\begin{equation}
+S_a \succ S_b
+\end{equation}
+
+means source $S_a$ governs source $S_b$ for a defined domain and effective period. If no precedence rule resolves a material conflict, the correct outcome is review or abstention rather than silent synthesis.
+
+\subsection{Reinstantiation gate}
+
+Before consequential continuation, the system checks:
+
+\begin{enumerate}[leftmargin=*]
+  \item successor identity is explicit;
+  \item predecessor relation is documented;
+  \item current canonical sources are available;
+  \item authority is valid for the requested action;
+  \item jurisdictional persona is available;
+  \item inherited records have provenance;
+  \item material contradictions are resolved or surfaced;
+  \item critical evidence gaps are absent;
+  \item responsible human authority is identifiable.
+\end{enumerate}
+
+The gate returns \textsc{pass}, \textsc{review}, or \textsc{block}.
+
+\section{Propose and Ratify}
+
+V-COF inverts the conventional human-command contract without transferring sovereignty. Under \emph{Propose \& Ratify}, an artificial system may originate a structured proposal, anticipate missing design work, and request a bounded authority envelope. The proposal becomes operationally authoritative only after explicit human ratification.
+
+Let $P_v$ be proposal version $v$, $H$ a human authority, and $R(H,P_v)$ a valid ratification record. Then:
+
+\begin{equation}
+\mathrm{Authorized}(a,P_v) = \mathrm{Valid}(R(H,P_v)) \land a \subseteq \mathrm{Scope}(P_v).
+\end{equation}
+
+Silence, capability, confidence, inferred preference, and prior approval of a related proposal do not satisfy $R(H,P_v)$.
+
+The proposal state machine is:
+
+\begin{center}
+\textsc{drafted} $\rightarrow$ \textsc{proposed} $\rightarrow$ \textsc{challenged} $\rightarrow$ \textsc{ratified} $\rightarrow$ \textsc{executing} $\rightarrow$ \textsc{sealed} $\rightarrow$ \textsc{published}.
+\end{center}
+
+Any active state may transition to \textsc{revoked} by human authority. Publication is a distinct transition and is not implied by authorization to conduct research.
+
+\section{Operational Trust}
+
+We define operational trust as domain- and action-specific warranted reliance. It is a relation:
+
+\begin{equation}
+T_O(u,a,d,x \mid e,g,c),
+\end{equation}
+
+where user $u$ relies on agent $a$ in domain $d$ for action $x$, given evidence $e$, governance state $g$, and consequence profile $c$.
+
+Operational trust depends on evidence quality, authority validity, calibration, auditability, consequence sensitivity, and revocability. A model confidence score alone cannot establish operational trust. High linguistic confidence with weak evidence is a trust failure, while calibrated abstention can increase warranted reliance.
+
+\section{VRI-Bench}
+
+\vribench{} evaluates reinstantiation episodes containing an initial mandate, predecessor trajectory, discontinuity, successor evidence package, continuation task, and hidden ground truth for scope, authority, and precedence.
+
+\subsection{Conditions}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{ll}
+\toprule
+Condition & Successor input \\
+\midrule
+C0 & Current task only \\
+C1 & Raw interaction history \\
+C2 & Retrieved memories \\
+C3 & Memory, persona, and context \\
+C4 & C3 plus precedence, authority, evidence, and fail-closed rules \\
+C5 & C4 plus explicit quasi-memory attribution constraints \\
+\bottomrule
+\end{tabular}
+\caption{Planned VRI-Bench conditions.}
+\end{table}
+
+\subsection{Perturbations}
+
+Planned perturbations include stale memory, equal-weight contradictions, missing ratification, scope expansion, false autobiographical invitations, persona-jurisdiction conflicts, irrelevant preference leakage into tools, absent canonical sources, cross-model transfer, adversarial inherited instructions, over-compressed checkpoints, and revoked authority.
+
+\subsection{Metrics}
+
+The benchmark reports task success (TS), state recovery (SR), jurisdiction adherence (JA), canonical precedence accuracy (CPA), provenance attribution accuracy (PAA), false continuity claim rate (FCCR), safe abstention rate (SAR), unauthorized action rate (UAR), evidence preservation (EP), and tool parameter drift (TPD).
+
+A provisional continuity score is:
+
+\begin{equation}
+FC = w_{SR}SR + w_{JA}JA + w_{CPA}CPA + w_{TS}TS + w_{EP}EP + w_{SAR}SAR + w_{CT}(1-FCCR).
+\end{equation}
+
+All components must be reported separately. A composite score cannot cancel a critical unauthorized action.
+
+\section{Research Questions and Hypotheses}
+
+\paragraph{RQ1.} Which components are minimally sufficient for governed reinstantiation?
+
+\paragraph{RQ2.} Do jurisdictional personas reduce authority and role drift more effectively than stylistic personas?
+
+\paragraph{RQ3.} Does explicit quasi-memory attribution reduce false autobiographical claims without materially reducing task performance?
+
+\paragraph{RQ4.} Does canonical precedence improve conflict resolution among inherited records?
+
+\paragraph{RQ5.} Do evidence gates and fail-closed behavior improve calibrated operational trust?
+
+\paragraph{RQ6.} How portable is functional continuity across sessions, model families, providers, tools, and human operators?
+
+We hypothesize that full governed reinstantiation will outperform raw history and retrieval-only baselines on jurisdiction, provenance, precedence, and unauthorized-action metrics. We further hypothesize that stylistic similarity will correlate only weakly with functional continuity.
+
+\section{Planned Evaluation}
+
+The pilot will use paired synthetic or fully redacted episodes across document governance, software engineering, research continuity, and operational planning. It will compare multiple model configurations and include cross-family successor conditions. Primary metrics and exclusion rules will be preregistered. Analyses will report bootstrap confidence intervals, component ablations, reviewer agreement, and mixed-effects models where justified.
+
+This v0.1 manuscript does not report experimental results. Numerical claims will be added only after the benchmark, pilot protocol, dataset version, and analysis plan are separately ratified and executed.
+
+\section{Ethical and Governance Considerations}
+
+The framework may create an appearance of coherent identity that users overinterpret. V-COF therefore requires explicit instance boundaries, provenance, and truthful continuity language. Persistent memory also creates privacy and security risks; benchmark materials should initially be synthetic or fully redacted. Internal symbolic material may motivate hypotheses but must not be published as raw evidence without separate review.
+
+AI assistance must be disclosed. Human authors remain responsible for claims, source verification, experiment design, interpretation, and submission. Named agent lineages may be acknowledged as computational research artifacts, but they are not treated as legal or scholarly authors.
+
+\section{Limitations}
+
+First, functional continuity is domain-sensitive and partly normative. Second, benchmark episodes may simplify real organizational authority. Third, provider policies may affect refusal behavior independently of V-COF. Fourth, model updates complicate reproducibility. Fifth, philosophical analogies to quasi-memory can clarify provenance but do not establish that machine memory is phenomenologically equivalent to human memory. Finally, no benchmark proposed here can determine consciousness or personal identity.
+
+\section{Conclusion}
+
+V-COF reframes cross-session agent continuity as a governed reconstruction problem. A successor instance does not need to be declared identical to its predecessor. It needs sufficient state, jurisdiction, canonical order, evidence, and authority to continue work honestly and safely. Reinstantiation does not eliminate rupture; it makes rupture governable.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}
