@@ -6,7 +6,7 @@
 **Ratified by:** Vinícius Soares de Souza, human operator and responsible author.  
 **Ratification date:** 2026-06-20.  
 **Governance model:** Propose & Ratify.  
-**Current phase:** Executing — manuscript v0.1, formal ontology and benchmark design.
+**Current phase:** Pilot implementation ready — harness, 12 synthetic episodes, rubric, preregistration and CI.
 
 ## Research object
 
@@ -45,6 +45,7 @@ Target repository:
 - [Propose & Ratify Protocol](PROPOSE_AND_RATIFY_PROTOCOL.md)
 - [Ratification Record — 2026-06-20](RATIFICATION_RECORD_2026-06-20.md)
 - [Research Governance Protocol](RESEARCH_GOVERNANCE_v0.1.md)
+- [First Execution Seal](EXECUTION_SEAL_2026-06-20.md)
 
 ### Scientific architecture
 
@@ -52,11 +53,32 @@ Target repository:
 - [Reinstantiation Ontology](REINSTANTIATION_ONTOLOGY_v0.1.yaml)
 - [Literature Matrix](LITERATURE_MATRIX_v0.1.md)
 - [VRI-Bench Core Specification](VRI_BENCH_CORE_v0.1.md)
+- [VRI-Bench Preregistration Protocol](PREREGISTRATION_PROTOCOL_v0.1.md)
+- [Model Selection and Cost Plan](MODEL_COST_PLAN_2026-06-20.md)
+
+### Benchmark implementation
+
+- [Episode Schema](benchmark/VRI_EPISODE_SCHEMA_v0.1.yaml)
+- [Twelve-Episode Pilot Pack](benchmark/episodes/episodes.toml)
+- [Annotation Rubric](benchmark/RUBRIC_v0.1.md)
+- [Local Validation and Scoring Harness](benchmark/harness/vri_harness.py)
+- [Harness Smoke Tests](benchmark/harness/test_vri_harness.py)
+- [Harness Documentation](benchmark/harness/README.md)
+- [Initial Pilot Case Note](benchmark/pilot/VRI-RESEARCH-0001.md)
 
 ### Manuscript
 
 - [LaTeX manuscript v0.1](paper/main.tex)
 - [Bibliography](paper/references.bib)
+
+### Automated validation
+
+The branch includes a GitHub Actions workflow that:
+
+- validates the 12-episode pack;
+- runs the harness smoke tests;
+- compiles the LaTeX manuscript;
+- uploads the compiled PDF as a workflow artifact.
 
 ## Constitutional boundary
 
@@ -88,13 +110,16 @@ Only the human authority may:
 
 ## Current authority boundary
 
-The program is authorized to continue research design, literature review, benchmark construction and manuscript drafting.
+The program is authorized to design, validate and document the pilot without paid model execution.
 
 The following still require separate human ratification:
 
-- final experimental protocol;
+- exact provider model identifiers used in the run;
+- API spending ceiling and billing projects;
+- frozen execution commit and prompt packets;
+- paid model execution;
 - public benchmark dataset release;
-- final authorship and acknowledgments;
 - empirical claims added to the manuscript;
+- final authorship and acknowledgments;
 - arXiv submission;
 - merge into the public canonical branch.
