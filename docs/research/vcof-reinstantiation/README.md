@@ -6,7 +6,7 @@
 **Ratified by:** Vinícius Soares de Souza, human operator and responsible author.  
 **Ratification date:** 2026-06-20.  
 **Governance model:** Propose & Ratify.  
-**Current phase:** Constitutional and research-design initialization.
+**Current phase:** Executing — manuscript v0.1, formal ontology and benchmark design.
 
 ## Research object
 
@@ -38,6 +38,26 @@ Target repository:
 5. The V-COF Reinstantiation Benchmark (`VRI-Bench`).
 6. A reproducible manuscript and public research artifact set.
 
+## Current artifacts
+
+### Constitutional and governance layer
+
+- [Propose & Ratify Protocol](PROPOSE_AND_RATIFY_PROTOCOL.md)
+- [Ratification Record — 2026-06-20](RATIFICATION_RECORD_2026-06-20.md)
+- [Research Governance Protocol](RESEARCH_GOVERNANCE_v0.1.md)
+
+### Scientific architecture
+
+- [Paper Blueprint](PAPER_BLUEPRINT.md)
+- [Reinstantiation Ontology](REINSTANTIATION_ONTOLOGY_v0.1.yaml)
+- [Literature Matrix](LITERATURE_MATRIX_v0.1.md)
+- [VRI-Bench Core Specification](VRI_BENCH_CORE_v0.1.md)
+
+### Manuscript
+
+- [LaTeX manuscript v0.1](paper/main.tex)
+- [Bibliography](paper/references.bib)
+
 ## Constitutional boundary
 
 The public research layer may derive hypotheses and architecture from the Verittà corpus, but internal symbolic language and private operational records are not themselves scientific evidence of effectiveness.
@@ -66,8 +86,15 @@ Only the human authority may:
 - authorize irreversible actions;
 - merge the proposal into the public canon.
 
-See:
+## Current authority boundary
 
-- [Propose & Ratify Protocol](PROPOSE_AND_RATIFY_PROTOCOL.md)
-- [Paper Blueprint](PAPER_BLUEPRINT.md)
-- [Ratification Record](RATIFICATION_RECORD_2026-06-20.md)
+The program is authorized to continue research design, literature review, benchmark construction and manuscript drafting.
+
+The following still require separate human ratification:
+
+- final experimental protocol;
+- public benchmark dataset release;
+- final authorship and acknowledgments;
+- empirical claims added to the manuscript;
+- arXiv submission;
+- merge into the public canonical branch.
