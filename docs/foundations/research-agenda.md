@@ -22,6 +22,10 @@ How do complex ecosystems preserve canonical precedence without collapsing into 
 ### 6. Reinstantiation and Continuity
 How can new sessions, agents or operators recover sufficient context without pretending to possess perfect continuity?
 
+Active public program:
+- [V-COF Reinstantiation Research Program](../research/vcof-reinstantiation/README.md)
+- [Agentic Map](../research/vcof-reinstantiation/AGENTIC_MAP.yaml)
+
 ### 7. Public Framework Translation
 How can a private operational method be translated into a public framework without exposing sensitive internals or reducing it to marketing language?
 
@@ -29,4 +33,5 @@ How can a private operational method be translated into a public framework witho
 - research before rhetoric;
 - architecture before branding;
 - publishable claims before promotional inflation;
-- clear boundaries between private canon and public layer.
+- clear boundaries between private canon and public layer;
+- adversarial review before canonical integration.
