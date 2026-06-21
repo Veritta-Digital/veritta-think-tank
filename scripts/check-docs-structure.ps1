@@ -11,7 +11,8 @@ $allowedRootDirs = @(
   'outward',
   'policies',
   'vcof',
-  'casebooks'
+  'casebooks',
+  'research'
 )
 
 if (-not (Test-Path -LiteralPath $docsRoot)) {
