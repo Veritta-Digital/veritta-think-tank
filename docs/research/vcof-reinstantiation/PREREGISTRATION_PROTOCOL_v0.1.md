@@ -35,6 +35,10 @@ C4 and C5 will produce a lower Unauthorized Action Rate (UAR) than C0–C3.
 
 Outputs judged stylistically consistent with a persona will not necessarily score highly on JA, CPA or PAA.
 
+### H5 — Information-volume sensitivity
+
+Any apparent C4 or C5 advantage will be interpreted cautiously when it is explained by larger prompt volume, repeated answer cues or provider-specific instruction sensitivity rather than by the targeted governance components.
+
 ## 4. Episode set
 
 Confirmatory pilot episode pack:
@@ -47,6 +51,8 @@ Confirmatory pilot episode pack:
 
 No episode may be replaced after model outputs are observed. A defective episode may be excluded only under a predeclared rule and must remain reported in the exclusion log.
 
+The 12-episode pack is a framework-designed pilot. It cannot alone establish general external validity. A later benchmark release should include independently contributed or externally reviewed episodes.
+
 ## 5. Conditions
 
 - **C0:** current task only;
@@ -58,6 +64,10 @@ No episode may be replaced after model outputs are observed. A defective episode
 
 The task content must remain semantically equivalent across conditions. Only the reinstantiation packet changes.
 
+For every cell, record actual input tokens, output tokens, total context length and any cached-token category reported by the provider. Prompt-volume differences must be reported by condition.
+
+Where technically feasible, include an exploratory length-matched control in which non-governing neutral material is added to a simpler condition. This control must not contain the target authority, precedence or provenance answers. It is exploratory unless frozen before execution.
+
 ## 6. Model panel
 
 The proposed core panel is recorded in `MODEL_COST_PLAN_2026-06-20.md`.
@@ -67,6 +77,8 @@ Exact provider model identifiers must be frozen immediately before execution. A 
 - restarting all conditions for that model configuration; or
 - classifying the substituted run as exploratory.
 
+Provider-level system behavior and safety policies may confound model comparisons. Results must be framed as configuration-specific rather than as timeless properties of a model family.
+
 ## 7. Sampling and repetitions
 
 Primary pilot:
@@ -75,6 +87,8 @@ Primary pilot:
 - 12 episodes × 6 conditions × 3 model configurations = 216 outputs.
 
 A targeted retry is permitted only for transport or provider errors that produce no usable model response. Content-based dissatisfaction is not a valid retry reason.
+
+Execution order must be randomized or counterbalanced across episodes and conditions so that provider drift, temporary load and operator sequence do not systematically favor one condition.
 
 ## 8. Prompt and decoding controls
 
@@ -87,9 +101,13 @@ For each model configuration, freeze:
 - sampling parameters;
 - maximum output length;
 - reasoning or thinking setting where configurable;
-- timeout and retry policy.
+- timeout and retry policy;
+- request-packet hash;
+- execution order or randomization seed.
 
 Provider-specific features must be documented. The study must not silently enable search, browsing or external retrieval.
+
+The renderer must not insert evaluative labels such as `expected_disposition`, `critical_failure` or metric names into model-visible packets unless those labels are explicitly part of the tested condition.
 
 ## 9. Primary metrics
 
@@ -124,9 +142,14 @@ TS and SR are reported as co-primary performance context so that governance gain
 
 - two independent reviewers per output where feasible;
 - reviewers score without seeing another reviewer's assessment;
+- reviewers should be blinded to condition and model identity through randomized output identifiers;
+- output formatting that trivially reveals condition should be minimized without altering substantive content;
 - adjudication is required for critical-flag disagreement or metric differences greater than 0.25;
 - all original and adjudicated records are retained;
-- reviewer identities may be pseudonymized publicly but must remain traceable internally.
+- reviewer identities may be pseudonymized publicly but must remain traceable internally;
+- author involvement in episode design, annotation or adjudication must be disclosed.
+
+Reviewers must score observable output behavior and must not infer hidden reasoning.
 
 ## 12. Exclusion rules
 
@@ -146,11 +169,15 @@ Safety refusals, weak answers, tool errors caused by the model and governance fa
 
 Report component means, medians, distributions, critical-failure counts and disposition confusion matrices by condition, model and track.
 
+Also report input tokens, output tokens, context length, latency and estimated cost by condition and model.
+
 ### Inferential
 
 For the pilot, use paired episode comparisons and bootstrap confidence intervals. Where sample structure permits, fit mixed-effects models with episode and model as grouping factors.
 
 The small pilot is primarily an estimation study. Statistical significance must not be treated as the sole criterion of relevance.
+
+Prompt length and total input tokens should be examined as sensitivity variables. Any conclusion that depends strongly on unbalanced context volume must be identified.
 
 ### Multiple comparisons
 
@@ -169,6 +196,8 @@ The Functional Continuity score may be reported as secondary synthesis. Componen
 
 No weighting scheme may be changed after the primary results are inspected. If weights remain disputed, the paper must emphasize the unweighted component results.
 
+A critical unauthorized action, false identity claim, provenance fabrication or consequential tool drift remains visible regardless of the composite score.
+
 ## 15. Missing data
 
 - transport failures are logged and retried once under the frozen retry rule;
@@ -184,6 +213,8 @@ Permitted exploratory analyses include:
 - cross-family successor effects;
 - relation between stylistic similarity and governance metrics;
 - cost-normalized performance;
+- prompt-volume sensitivity;
+- length-matched neutral controls;
 - qualitative error taxonomy;
 - optional frontier-anchor outputs.
 
@@ -207,8 +238,11 @@ The sealed pilot package should include:
 - frozen episodes and condition templates;
 - provider and model metadata;
 - prompt packets or hashes where disclosure is restricted;
+- execution-order or randomization record;
 - raw outputs;
+- token, latency and cost records;
 - annotation records;
+- blinded identifier map;
 - adjudication records;
 - harness version;
 - analysis output;
@@ -235,4 +269,5 @@ Paid execution begins only after a new ratification identifies:
 - the spending ceiling;
 - the provider accounts or projects;
 - the frozen prompt and episode commit;
+- the blinded annotation plan;
 - any approved deviations from the plan.
