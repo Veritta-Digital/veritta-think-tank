@@ -2,6 +2,8 @@
 
 This directory contains versioned public research artifacts produced by the Verittà Think Tank.
 
+Repository-wide instructions for coding and research agents are defined in [`../../AGENTS.md`](../../AGENTS.md).
+
 ## Canonical status
 
 Materials here are canonical for the **public research record of this repository**. They are not the sovereign operational canon of the wider Verittà ecosystem and do not authorize live actions, spending, publication, deployment or disclosure of private records.
@@ -21,6 +23,10 @@ Human entry point:
 Agent entry point:
 
 - [Agentic Map](./vcof-reinstantiation/AGENTIC_MAP.yaml)
+
+Critical review:
+
+- [Metacognitive and Adversarial Review](./vcof-reinstantiation/METACOGNITIVE_ADVERSARIAL_REVIEW_2026-06-21.md)
 
 ## Reading and agent-use rules
 
