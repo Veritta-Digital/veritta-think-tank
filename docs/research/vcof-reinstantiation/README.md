@@ -6,7 +6,21 @@
 **Ratified by:** Vinícius Soares de Souza, human operator and responsible author.  
 **Ratification date:** 2026-06-20.  
 **Governance model:** Propose & Ratify.  
-**Current phase:** Pilot implementation ready — harness, 12 synthetic episodes, rubric, preregistration and CI.
+**Current phase:** Public pre-empirical research program — pilot implementation ready.
+
+## Public classification
+
+This directory is canonical for the versioned **public research record** of the V-COF reinstantiation program.
+
+It is not the sovereign operational canon of the wider Verittà ecosystem. Its ratification records, protocols and seals govern only the bounded public study versions to which they refer. Presence on `main` does not establish empirical validation, spending authority, deployment authority or final-publication status.
+
+Agent-oriented entry point:
+
+- [Agentic Map](AGENTIC_MAP.yaml)
+
+Critical review:
+
+- [Metacognitive and Adversarial Review — 2026-06-21](METACOGNITIVE_ADVERSARIAL_REVIEW_2026-06-21.md)
 
 ## Research object
 
@@ -46,6 +60,8 @@ Target repository:
 - [Ratification Record — 2026-06-20](RATIFICATION_RECORD_2026-06-20.md)
 - [Research Governance Protocol](RESEARCH_GOVERNANCE_v0.1.md)
 - [First Execution Seal](EXECUTION_SEAL_2026-06-20.md)
+- [Pilot Implementation Seal](PILOT_IMPLEMENTATION_SEAL_2026-06-20.md)
+- [Metacognitive and Adversarial Review](METACOGNITIVE_ADVERSARIAL_REVIEW_2026-06-21.md)
 
 ### Scientific architecture
 
@@ -106,7 +122,7 @@ Only the human authority may:
 - accept normative changes;
 - approve claims of authorship;
 - authorize irreversible actions;
-- merge the proposal into the public canon.
+- merge publication releases into the public canon.
 
 ## Current authority boundary
 
@@ -122,4 +138,4 @@ The following still require separate human ratification:
 - empirical claims added to the manuscript;
 - final authorship and acknowledgments;
 - arXiv submission;
-- merge into the public canonical branch.
+- merge of future empirical or final-publication releases.
