@@ -1,7 +1,7 @@
 # Documentation Index
 
-This repository is the public editorial surface of the Veritta Think Tank.
-It is not the sovereign operational HQ of the Veritta ecosystem.
+This repository is the public editorial and research surface of the Verittà Think Tank.
+It is not the sovereign operational HQ of the Verittà ecosystem.
 
 ## Placement Convention
 - foundations are created in [`./foundations/`](./foundations/README.md)
@@ -9,6 +9,7 @@ It is not the sovereign operational HQ of the Veritta ecosystem.
 - Forge Diaries program governance is created in [`./forge-diaries/program/`](./forge-diaries/program/README.md)
 - volume materials are created in [`./forge-diaries/volume-public-0.1/`](./forge-diaries/volume-public-0.1/README.md)
 - outward channel material is created in [`./outward/linkedin/`](./outward/linkedin/README.md)
+- public research programs are created in [`./research/`](./research/README.md)
 
 `docs/` root is guarded so that only `index.md` may exist as a Markdown file at that level.
 
@@ -23,6 +24,12 @@ It is not the sovereign operational HQ of the Veritta ecosystem.
 - [FAQ](./foundations/faq.md)
 - [Research Agenda](./foundations/research-agenda.md)
 - [Licensing Direction](./foundations/licensing-direction.md)
+
+## Research
+- [Public Research Programs](./research/README.md)
+- [V-COF Reinstantiation Program](./research/vcof-reinstantiation/README.md)
+- [V-COF Reinstantiation Agentic Map](./research/vcof-reinstantiation/AGENTIC_MAP.yaml)
+- [Metacognitive and Adversarial Review](./research/vcof-reinstantiation/METACOGNITIVE_ADVERSARIAL_REVIEW_2026-06-21.md)
 
 ## Essays
 - [Essays README](./essays/README.md)

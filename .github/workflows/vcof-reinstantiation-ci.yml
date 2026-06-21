@@ -1,0 +1,60 @@
+name: vcof-reinstantiation-ci
+
+on:
+  push:
+    paths:
+      - "docs/research/vcof-reinstantiation/**"
+      - ".github/workflows/vcof-reinstantiation-ci.yml"
+  pull_request:
+    paths:
+      - "docs/research/vcof-reinstantiation/**"
+      - ".github/workflows/vcof-reinstantiation-ci.yml"
+
+jobs:
+  benchmark-harness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate synthetic episode pack
+        run: >-
+          python docs/research/vcof-reinstantiation/benchmark/harness/vri_harness.py
+          validate
+          docs/research/vcof-reinstantiation/benchmark/episodes/episodes.toml
+
+      - name: Run harness smoke tests
+        run: >-
+          python -m unittest
+          docs/research/vcof-reinstantiation/benchmark/harness/test_vri_harness.py
+
+  manuscript:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install LaTeX toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            latexmk \
+            texlive-latex-base \
+            texlive-latex-extra \
+            texlive-bibtex-extra
+
+      - name: Compile manuscript
+        working-directory: docs/research/vcof-reinstantiation/paper
+        run: latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+
+      - name: Upload compiled manuscript
+        uses: actions/upload-artifact@v4
+        with:
+          name: vcof-reinstantiation-manuscript
+          path: docs/research/vcof-reinstantiation/paper/main.pdf
+          if-no-files-found: error

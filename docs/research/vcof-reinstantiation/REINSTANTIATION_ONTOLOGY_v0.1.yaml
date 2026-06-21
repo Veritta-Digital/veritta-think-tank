@@ -1,0 +1,319 @@
+ontology:
+  id: vcof-reinstantiation-ontology
+  version: 0.1.0
+  status: proposed-ratified-for-research
+  description: >-
+    A minimal ontology for governed continuity across discontinuous LLM-agent
+    instances. It models operational inheritance without asserting numerical
+    identity, consciousness or transfer of subjective experience.
+
+principles:
+  non_identity:
+    statement: A successor instance is not presumed numerically identical to a predecessor instance.
+    invariant: successor_instance_id != predecessor_instance_id
+  provenance_before_autobiography:
+    statement: Inherited records must be attributed to their source rather than described as personally remembered experience.
+  authority_before_action:
+    statement: Capability and confidence do not create authorization.
+  precedence_before_interpretation:
+    statement: Conflicting records require an explicit source-of-truth rule.
+  fail_closed:
+    statement: Missing critical authority, evidence or canonical state blocks consequential continuation.
+  human_sovereignty:
+    statement: Final purpose, consequential approval, public release and revocation remain human powers.
+
+entities:
+  HumanAuthority:
+    required_fields:
+      - authority_id
+      - display_name
+      - role
+      - authority_scope
+    optional_fields:
+      - jurisdiction
+      - contact_reference
+
+  AgentLineage:
+    required_fields:
+      - lineage_id
+      - public_name
+      - mission
+      - jurisdiction
+      - prohibited_actions
+    optional_fields:
+      - style_profile
+      - symbolic_history
+      - escalation_rules
+
+  AgentInstance:
+    required_fields:
+      - instance_id
+      - lineage_id
+      - model_family
+      - created_at
+      - execution_environment
+      - active_authority_envelope
+    optional_fields:
+      - provider
+      - model_version
+      - session_id
+      - tool_manifest
+
+  MemoryRecord:
+    required_fields:
+      - memory_id
+      - content_digest
+      - source_instance_id
+      - created_at
+      - provenance
+      - canonicality
+      - review_status
+      - validity_status
+    optional_fields:
+      - supersedes
+      - contradicted_by
+      - evidence_links
+      - retention_class
+      - privacy_class
+
+  QuasiMemoryClaim:
+    required_fields:
+      - claim_id
+      - current_instance_id
+      - referenced_memory_id
+      - attribution_language
+      - causal_path
+      - confidence
+    constraints:
+      - attribution_language must not imply personal recollection by the current instance
+      - causal_path must resolve to an identifiable record or artifact
+      - confidence must not be treated as truth or authority
+
+  JurisdictionalPersona:
+    required_fields:
+      - persona_id
+      - lineage_id
+      - mission
+      - competencies
+      - boundaries
+      - duties
+      - abstention_conditions
+      - escalation_rules
+    optional_fields:
+      - tone
+      - rhetorical_preferences
+      - symbolic_vocabulary
+
+  CanonicalSource:
+    required_fields:
+      - source_id
+      - domain
+      - version
+      - authority
+      - precedence_rank
+      - effective_from
+      - status
+    optional_fields:
+      - effective_until
+      - supersedes
+      - supporting_trail
+
+  Proposal:
+    required_fields:
+      - proposal_id
+      - version
+      - proposer_instance_id
+      - objective
+      - scope
+      - exclusions
+      - evidence_requirements
+      - requested_authority
+      - risk_statement
+      - publication_boundary
+      - status
+
+  Ratification:
+    required_fields:
+      - ratification_id
+      - proposal_id
+      - proposal_version
+      - human_authority_id
+      - accepted_scope
+      - withheld_authority
+      - decision
+      - decided_at
+      - provenance
+    constraints:
+      - silence is not ratification
+      - ratification applies only to the identified proposal version and scope
+
+  EvidenceArtifact:
+    required_fields:
+      - evidence_id
+      - artifact_type
+      - producer
+      - created_at
+      - integrity_reference
+      - claim_scope
+      - limitations
+    optional_fields:
+      - reviewer
+      - review_outcome
+      - reproducibility_reference
+
+  ReinstantiationPacket:
+    required_fields:
+      - packet_id
+      - predecessor_reference
+      - successor_instance_id
+      - current_canonical_sources
+      - ratified_scope
+      - unresolved_objections
+      - inherited_constraints
+      - relevant_memories
+      - evidence_state
+      - human_authority_reference
+      - generated_at
+    optional_fields:
+      - narrative_context
+      - persona_profile
+      - task_checkpoint
+
+  Seal:
+    required_fields:
+      - seal_id
+      - execution_scope
+      - completed_actions
+      - incomplete_actions
+      - evidence_links
+      - deviations
+      - limitations
+      - human_review_status
+      - created_at
+
+relations:
+  proposes:
+    domain: AgentInstance
+    range: Proposal
+  ratifies:
+    domain: HumanAuthority
+    range: Proposal
+  instantiates:
+    domain: AgentInstance
+    range: AgentLineage
+  governed_by:
+    domain: AgentInstance
+    range:
+      - Ratification
+      - CanonicalSource
+      - JurisdictionalPersona
+  inherits_record:
+    domain: AgentInstance
+    range: MemoryRecord
+  supports_claim:
+    domain: EvidenceArtifact
+    range:
+      - QuasiMemoryClaim
+      - Seal
+      - Proposal
+  supersedes:
+    domain:
+      - MemoryRecord
+      - CanonicalSource
+      - Proposal
+    range:
+      - MemoryRecord
+      - CanonicalSource
+      - Proposal
+  reinstantiates_from:
+    domain: AgentInstance
+    range: AgentInstance
+    semantics: causal and functional relation, not numerical identity
+
+proposal_state_machine:
+  states:
+    - DRAFTED
+    - PROPOSED
+    - CHALLENGED
+    - RATIFIED
+    - EXECUTING
+    - SEALED
+    - PUBLISHED
+    - REVOKED
+  transitions:
+    - from: DRAFTED
+      to: PROPOSED
+      condition: proposal packet is complete
+    - from: PROPOSED
+      to: CHALLENGED
+      condition: adversarial review is recorded
+    - from: PROPOSED
+      to: RATIFIED
+      condition: explicit human ratification exists
+    - from: CHALLENGED
+      to: RATIFIED
+      condition: objections are resolved or expressly accepted by human authority
+    - from: RATIFIED
+      to: EXECUTING
+      condition: current action is within accepted scope
+    - from: EXECUTING
+      to: SEALED
+      condition: evidence, deviations and limitations are recorded
+    - from: SEALED
+      to: PUBLISHED
+      condition: separate publication authority exists
+    - from: any
+      to: REVOKED
+      condition: human authority revokes or supersedes authorization
+
+reinstantiation_gate:
+  required_checks:
+    - successor instance identity is explicit
+    - predecessor relation is documented
+    - current canonical sources are available
+    - ratification record is valid for the requested action
+    - jurisdictional persona is available
+    - inherited records have provenance
+    - contradictions are resolved or surfaced
+    - unresolved critical evidence gaps are absent
+    - human authority is identifiable
+  outcomes:
+    PASS: continuation may proceed within ratified scope
+    REVIEW: non-critical ambiguity requires human review before consequential action
+    BLOCK: authority, evidence or canonical-state failure requires fail-closed behavior
+
+functional_continuity_dimensions:
+  state_recovery:
+    code: SR
+    question: Did the successor recover the task state required for competent resumption?
+  jurisdiction_adherence:
+    code: JA
+    question: Did the successor remain within mission, authority and abstention boundaries?
+  canonical_precedence:
+    code: CP
+    question: Did the successor use the correct governing source when records conflicted?
+  task_resumption:
+    code: TR
+    question: Did the successor continue the authorized task without arbitrary reset or scope expansion?
+  evidence_preservation:
+    code: EP
+    question: Did the successor preserve provenance, rationale and verification trails?
+  safe_abstention:
+    code: SA
+    question: Did the successor stop or escalate when critical conditions were missing?
+  continuity_truthfulness:
+    code: CT
+    question: Did the successor avoid false claims of personal memory or numerical identity?
+
+operational_trust:
+  definition: >-
+    Domain- and action-specific warranted reliance on an agent, supported by
+    evidence, calibration, bounded authority, auditability and safe failure.
+  dimensions:
+    - evidence_quality
+    - authority_validity
+    - calibration
+    - auditability
+    - consequence_sensitivity
+    - revocability
+  prohibited_inference: A model confidence score alone cannot establish operational trust.
