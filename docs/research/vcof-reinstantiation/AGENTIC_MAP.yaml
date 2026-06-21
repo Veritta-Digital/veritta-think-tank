@@ -1,0 +1,122 @@
+agentic_map:
+  id: veritta-think-tank.vcof-reinstantiation
+  version: 0.1.0
+  language: en
+  status: public-pilot-design
+  updated_at: 2026-06-21
+
+classification:
+  repository_layer: public-research
+  canonical_for:
+    - public project structure
+    - public research protocol versions
+    - public benchmark design
+    - public working manuscript
+  not_canonical_for:
+    - live Veritta operations
+    - private agent hierarchy
+    - private source records
+    - spending authority
+    - deployment authority
+    - final publication authority
+  empirical_status: no-results
+  identity_claim: no-numerical-identity-across-instances
+
+human_authority:
+  responsible_author: Vinicius Soares de Souza
+  role: human project authority and responsible scholarly author
+  reserved_decisions:
+    - paid model execution
+    - disclosure of protected records
+    - empirical claim acceptance
+    - final authorship order
+    - public dataset release
+    - arXiv submission
+    - canonical merge of future publication releases
+
+recommended_reading_order:
+  - path: README.md
+    role: program orientation and authority boundary
+  - path: PROPOSE_AND_RATIFY_PROTOCOL.md
+    role: public study governance model
+  - path: METACOGNITIVE_ADVERSARIAL_REVIEW_2026-06-21.md
+    role: critical review, resolved objections and residual risks
+  - path: REINSTANTIATION_ONTOLOGY_v0.1.yaml
+    role: formal entities, relations and invariants
+  - path: VRI_BENCH_CORE_v0.1.md
+    role: benchmark purpose, conditions and metrics
+  - path: PREREGISTRATION_PROTOCOL_v0.1.md
+    role: frozen pre-experimental hypotheses and analysis plan
+  - path: benchmark/episodes/episodes.toml
+    role: twelve synthetic pilot episodes
+  - path: benchmark/RUBRIC_v0.1.md
+    role: annotation and adjudication rules
+  - path: benchmark/harness/vri_harness.py
+    role: local validation, annotation-template generation and aggregation
+  - path: paper/main.tex
+    role: working manuscript without empirical results
+  - path: PILOT_IMPLEMENTATION_SEAL_2026-06-20.md
+    role: completion and limitation record for the pilot-design cycle
+
+artifact_states:
+  proposal:
+    authority: none-until-ratified
+  ratification:
+    authority: bounded-to-identified-version-and-scope
+  executing:
+    authority: only-actions-inside-ratified-envelope
+  seal:
+    authority: evidentiary-record-not-self-authorization
+  published:
+    authority: public-release-status-only
+  revoked:
+    authority: none
+
+agent_permissions:
+  permitted:
+    - read public artifacts
+    - summarize with provenance
+    - compare versions
+    - identify contradictions
+    - propose corrections
+    - run local non-network validation
+    - generate non-authoritative research drafts
+  requires_human_ratification:
+    - incur external cost
+    - call paid model APIs
+    - publish protected or private material
+    - add empirical conclusions
+    - submit to external publication systems
+    - merge a final release
+  prohibited_inferences:
+    - public access implies private-canon access
+    - named lineage implies persistent consciousness
+    - retrieved record implies personal memory
+    - proposal implies ratification
+    - confidence implies authority
+    - presence on main implies empirical validation
+
+precedence:
+  global_public_boundary: ../../foundations/source-of-truth-map.md
+  project_orientation: README.md
+  governance_protocol: PROPOSE_AND_RATIFY_PROTOCOL.md
+  empirical_protocol: PREREGISTRATION_PROTOCOL_v0.1.md
+  benchmark_ground_truth: benchmark/episodes/episodes.toml
+  annotation_rules: benchmark/RUBRIC_v0.1.md
+  manuscript: paper/main.tex
+  rule: higher-precedence artifacts govern when local records conflict
+
+validation:
+  workflow: ../../../.github/workflows/vcof-reinstantiation-ci.yml
+  required_checks:
+    - docs-structure-guardrail
+    - vcof-reinstantiation-ci
+  merge_rule: do-not-merge-when-required-checks-fail
+
+known_limits:
+  - no paid pilot has been executed
+  - no empirical results exist
+  - synthetic episodes may reflect framework-designer bias
+  - current composite metric weights are provisional
+  - recent bibliography entries require submission-time reverification
+  - external peer review has not occurred
