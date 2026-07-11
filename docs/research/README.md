@@ -12,6 +12,25 @@ A research protocol, ratification note or execution seal published here records 
 
 ## Active programs
 
+### V-COF Core 2.2 Public Release Candidate
+
+Public architectural proposal for version separation, provider-neutral model
+routing, portable reinstantiation, effect-aware tools and evaluation before
+promotion. The package is ratified for branch/PR drafting only; it is unmerged,
+non-operational and makes no empirical-validation claim.
+
+Human entry point:
+
+- [V-COF Core 2.2 Public Release Candidate](./vcof-core-2.2/README.md)
+
+Agent entry point:
+
+- [V-COF Core 2.2 Agentic Map](./vcof-core-2.2/AGENTIC_MAP.yaml)
+
+Ratification boundary:
+
+- [Drafting Ratification Record](./vcof-core-2.2/RATIFICATION_RECORD_2026-07-10.md)
+
 ### V-COF Reinstantiation
 
 Research on governed continuity across discontinuous LLM-agent instances, including quasi-memory, jurisdictional personas, canonical precedence, operational trust and VRI-Bench.
