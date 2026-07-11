@@ -1,0 +1,139 @@
+agentic_map:
+  id: veritta-think-tank.vcof-core-2.2
+  version: 0.1.0
+  language: pt-BR
+  status: ratified-for-drafting
+  updated_at: 2026-07-10
+
+classification:
+  repository_layer: public-research
+  artifact_class: public-framework-design
+  canonical_for:
+    - public proposal P&R-VCOF-CORE-2.2-2026-07
+    - public candidate artifact structure
+    - public candidate version semantics
+    - public candidate schemas and evaluation rules
+  not_canonical_for:
+    - live Veritta operations
+    - sovereign internal constitution
+    - private repository topology
+    - private agent hierarchy
+    - credentials or customer data
+    - model procurement or spending
+    - deployment or merge authority
+  empirical_status: no-results
+  identity_claim: no-numerical-identity-across-instances
+
+ratification:
+  proposal_id: P&R-VCOF-CORE-2.2-2026-07
+  proposal_version: 2026-07
+  state: ratified-for-drafting
+  ratified_at: 2026-07-10
+  ratifier_role: human_judge
+  record: RATIFICATION_RECORD_2026-07-10.md
+  granted:
+    - dedicated Git branch
+    - public proposal artifacts
+    - documentation-index updates
+    - local structural validation
+    - draft pull request
+  withheld:
+    - merge
+    - production mutation
+    - sovereign-canon amendment
+    - protected disclosure
+    - paid evaluation
+    - live activation
+
+human_authority:
+  role: human project authority and Judge
+  reserved_decisions:
+    - challenge resolution
+    - merge or publication on main
+    - internal adoption
+    - actual model-profile assignments
+    - paid or live evaluation
+    - production migration
+    - final V-COF 2.2 activation
+    - future V-COF 3.0 designation
+
+recommended_reading_order:
+  - path: README.md
+    role: orientation, status and public boundary
+  - path: RATIFICATION_RECORD_2026-07-10.md
+    role: exact bounded drafting authority
+  - path: P_AND_R_VCOF_CORE_2.2_2026_07.md
+    role: proposal, rationale, scope and exclusions
+  - path: VCOF_CORE_2.2_RC_PUBLIC_SPEC.md
+    role: candidate framework specification
+  - path: VCOF_VERSION_MANIFEST_v0.1.yaml
+    role: independent version bindings
+  - path: MODEL_ROUTING_POLICY_v0.1.yaml
+    role: provider-neutral Sol, Terra and Luna routing
+  - path: BOOT_PACKET_SCHEMA_v0.1.yaml
+    role: portable reinstantiation contract
+  - path: PUBLIC_REGISTRY_SCHEMAS_v0.1.yaml
+    role: public ecosystem and agent registry structures
+  - path: EVALUATION_AND_PROMOTION_ANNEX_v0.1.md
+    role: evaluation triggers, blockers and promotion authority
+  - path: MIGRATION_AND_CHALLENGE_PLAN_v0.1.md
+    role: staged migration and open challenge questions
+
+artifact_states:
+  package: ratified-for-drafting
+  public_candidate: unmerged
+  operational_activation: unauthorized
+  empirical_validation: absent
+  vcof_3_0: reserved
+
+agent_permissions:
+  permitted:
+    - read public artifacts
+    - validate YAML syntax
+    - validate relative links
+    - compare public versions
+    - identify contradictions
+    - propose bounded corrections on the draft branch
+    - report checks and limitations
+  requires_new_human_ratification:
+    - merge the pull request
+    - expose protected records
+    - populate private topology or agent registries
+    - bind profiles to paid model snapshots
+    - incur external cost
+    - execute a live or paid benchmark
+    - change production
+    - publish empirical conclusions
+  prohibited_inferences:
+    - public candidate implies live adoption
+    - proposal ratification implies merge authority
+    - engine version implies framework version
+    - model profile implies agent identity
+    - named lineage implies persistent consciousness
+    - retrieved record implies personal memory
+    - benchmark design implies empirical validation
+
+precedence:
+  global_public_boundary: ../../foundations/source-of-truth-map.md
+  public_constitution: ../../vcof/vcof-public-constitution.md
+  package_orientation: README.md
+  ratification_record: RATIFICATION_RECORD_2026-07-10.md
+  proposal: P_AND_R_VCOF_CORE_2.2_2026_07.md
+  candidate_specification: VCOF_CORE_2.2_RC_PUBLIC_SPEC.md
+  rule: higher-precedence public artifacts govern local interpretation
+
+validation:
+  required_checks:
+    - yaml-parse
+    - relative-link-resolution
+    - docs-structure-guardrail
+  merge_rule: merge-requires-new-human-ratification-and-green-required-checks
+
+known_limits:
+  - no private topology is published
+  - no private agent registry is published
+  - no actual model snapshot is assigned to a profile
+  - no paid or live evaluation has been executed
+  - no empirical result is claimed
+  - no production projection has adopted this candidate
+  - external peer review has not occurred

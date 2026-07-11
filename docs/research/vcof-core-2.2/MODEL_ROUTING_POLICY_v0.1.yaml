@@ -1,0 +1,125 @@
+api_version: public.vcof.veritta/v0.1
+kind: ModelRoutingPolicy
+
+metadata:
+  policy_id: vcof-model-routing-public-0.1
+  version: 0.1.0
+  status: public-candidate
+  updated_at: 2026-07-10
+  engine_generation_target: "5.6"
+
+principles:
+  provider_neutral: true
+  route_by_task_and_consequence: true
+  model_is_not_agent_identity: true
+  capability_is_not_authority: true
+  exact_snapshot_must_be_recorded: true
+  current_availability_must_be_reverified: true
+  current_price_must_be_reverified: true
+
+profiles:
+  sol:
+    purpose: highest-available-deliberative-depth
+    typical_tasks:
+      - constitutional design
+      - high-risk architecture
+      - source-of-truth conflict analysis
+      - adversarial review
+      - irreversible-impact planning
+    default_effect_ceiling: PROPOSAL_ONLY
+    requires_human_ratification_for:
+      - any external effect
+      - any irreversible or high-impact effect
+      - canonical promotion
+    independent_review:
+      required_when: decision-is-critical
+      same_family_counts_as_independent: false
+  terra:
+    purpose: balanced-operational-default
+    typical_tasks:
+      - bounded implementation
+      - research
+      - coordination
+      - documentation
+      - reversible tool use
+    default_effect_ceiling: WRITE_REVERSIBLE
+    escalation_triggers:
+      - authority ambiguity
+      - material safety ambiguity
+      - unresolved canonical conflict
+      - irreversible consequence
+      - protected-data uncertainty
+  luna:
+    purpose: high-volume-deterministic-support
+    typical_tasks:
+      - triage
+      - extraction
+      - classification
+      - normalization
+      - fixture generation
+      - formatting
+    default_effect_ceiling: READ
+    prohibited_without_new_ratification:
+      - canonical promotion
+      - external communication
+      - production write
+      - credential change
+      - high-impact adjudication
+
+routing_inputs:
+  required:
+    - task_type
+    - consequence_level
+    - effect_class
+    - jurisdiction
+    - authority_envelope
+    - data_classification
+    - tool_requirements
+    - evaluation_status
+  optional:
+    - latency_target
+    - cost_ceiling
+    - context_volume
+
+effect_classes:
+  - READ
+  - WRITE_REVERSIBLE
+  - EXTERNAL_EFFECT
+  - IRREVERSIBLE_OR_HIGH_IMPACT
+
+hard_rules:
+  - missing material authority returns BLOCK or HUMAN_REVIEW
+  - unresolved source precedence returns BLOCK or HUMAN_REVIEW
+  - an action inherits its highest applicable effect class
+  - splitting an action does not lower its effect class
+  - persisted reasoning is evidence metadata, not canonical truth
+  - a model change triggers relevant evaluation review
+  - a routing change triggers relevant evaluation review
+  - no model judge is sole high-stakes promotion authority
+
+model_binding:
+  status: unresolved
+  required_fields:
+    - provider
+    - model_id
+    - model_snapshot_or_release
+    - execution_date
+    - reasoning_configuration
+    - tool_configuration
+    - data_handling_boundary
+    - evaluation_record
+  human_ratification_required: true
+
+local_and_candidate_models:
+  default_status: evaluation-only
+  promotion_requires:
+    - versioned benchmark evidence
+    - jurisdiction testing
+    - tool-safety testing
+    - human promotion decision
+
+non_claims:
+  - profiles are not vendor product names
+  - engine generation is not framework version
+  - no current vendor capability or price is asserted
+  - no live model assignment is authorized by this policy candidate

@@ -1,0 +1,130 @@
+api_version: public.vcof.veritta/v0.1
+kind: PublicRegistrySchemas
+
+metadata:
+  version: 0.1.0
+  status: public-candidate
+  updated_at: 2026-07-10
+  population_status: schema-only
+
+public_boundary:
+  private_topology_disclosure: prohibited
+  private_agent_hierarchy_disclosure: prohibited
+  credentials_or_customer_data: prohibited
+  sovereign_internal_population: outside-public-scope
+
+ecosystem_registry_schema:
+  registry_id:
+    type: string
+    required: true
+  registry_version:
+    type: semver
+    required: true
+  generated_at:
+    type: date-time
+    required: true
+  entries:
+    type: array
+    required: true
+    item_required_fields:
+      - projection_id
+      - public_name
+      - layer
+      - visibility
+      - status
+      - canonical_for
+      - not_canonical_for
+      - source_of_truth_ref
+      - authority_boundary
+      - evidence_ref
+    field_rules:
+      projection_id: stable-non-secret-identifier
+      layer:
+        enum:
+          - sovereign
+          - public-research
+          - memory-lineage
+          - evaluation
+          - candidate-data
+          - infrastructure
+          - oversight
+          - product
+          - archive
+      visibility:
+        enum:
+          - public
+          - internal
+          - restricted
+      status:
+        enum:
+          - active
+          - candidate
+          - frozen
+          - retired
+          - archived
+      private_entry_public_rendering: redact-or-omit
+
+agent_registry_schema:
+  registry_id:
+    type: string
+    required: true
+  registry_version:
+    type: semver
+    required: true
+  entries:
+    type: array
+    required: true
+    item_required_fields:
+      - lineage_id
+      - public_name
+      - entity_kind
+      - lifecycle_status
+      - jurisdiction_ref
+      - authority_ref
+      - default_routing_profile
+      - canonical_source_ref
+    field_rules:
+      lineage_id: stable-identifier-not-bound-to-model
+      entity_kind:
+        enum:
+          - archetype
+          - lineage
+          - executable-agent
+          - subagent
+          - projection
+      lifecycle_status:
+        enum:
+          - proposed
+          - active
+          - suspended
+          - retired
+          - revoked
+      default_routing_profile:
+        enum:
+          - sol
+          - terra
+          - luna
+          - custom
+      exact_model_binding: separate-versioned-record
+      instance_ids: never-used-as-lineage-count
+      symbolic_archetypes: never-counted-as-executable-agents
+
+generation_rules:
+  - narrative indexes should be generated from a validated registry where feasible
+  - every generated artifact should record registry version and generation date
+  - manual exceptions should carry an evidence reference and expiry or review date
+  - private entries should never be emitted into public output by default
+  - count labels must identify whether they refer to archetypes, lineages, executable agents, instances or projections
+
+validation_rules:
+  - duplicate stable identifiers are blocked
+  - missing authority boundary is blocked
+  - missing source-of-truth reference is blocked
+  - public output containing restricted fields is blocked
+  - a model identifier cannot replace a lineage identifier
+  - retired or revoked entries cannot be silently counted as active
+
+non_claims:
+  - this file does not enumerate the Veritta ecosystem
+  - this file does not enumerate private agents
+  - this file does not authorize publication of protected registries

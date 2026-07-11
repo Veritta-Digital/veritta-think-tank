@@ -27,6 +27,9 @@ It is not the sovereign operational HQ of the Verittà ecosystem.
 
 ## Research
 - [Public Research Programs](./research/README.md)
+- [V-COF Core 2.2 Public Release Candidate](./research/vcof-core-2.2/README.md)
+- [V-COF Core 2.2 Agentic Map](./research/vcof-core-2.2/AGENTIC_MAP.yaml)
+- [V-COF Core 2.2 Drafting Ratification](./research/vcof-core-2.2/RATIFICATION_RECORD_2026-07-10.md)
 - [V-COF Reinstantiation Program](./research/vcof-reinstantiation/README.md)
 - [V-COF Reinstantiation Agentic Map](./research/vcof-reinstantiation/AGENTIC_MAP.yaml)
 - [Metacognitive and Adversarial Review](./research/vcof-reinstantiation/METACOGNITIVE_ADVERSARIAL_REVIEW_2026-06-21.md)

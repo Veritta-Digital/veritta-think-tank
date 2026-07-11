@@ -1,0 +1,278 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://veritta.digital/public/vcof/schemas/boot-packet/0.1
+title: V-COF Portable Boot Packet
+description: >-
+  Public candidate schema for the minimum provenance-bearing state required to
+  evaluate governed continuation by a successor agent instance.
+type: object
+additionalProperties: false
+
+required:
+  - packet_id
+  - packet_version
+  - created_at
+  - framework_manifest_ref
+  - agent_instance
+  - jurisdiction
+  - authority
+  - canonical_sources
+  - work_state
+  - evidence
+  - model_context
+  - data_boundary
+
+properties:
+  packet_id:
+    type: string
+    minLength: 1
+  packet_version:
+    type: string
+    const: 0.1.0
+  created_at:
+    type: string
+    format: date-time
+  framework_manifest_ref:
+    type: string
+    minLength: 1
+  agent_instance:
+    type: object
+    additionalProperties: false
+    required:
+      - instance_id
+      - lineage_id
+      - predecessor_relation
+    properties:
+      instance_id:
+        type: string
+      lineage_id:
+        type: string
+      predecessor_instance_id:
+        type:
+          - string
+          - "null"
+      predecessor_relation:
+        enum:
+          - none
+          - successor-with-records
+          - replay
+          - fork
+          - unknown
+      continuity_language:
+        const: record-attribution-not-personal-memory
+  jurisdiction:
+    type: object
+    additionalProperties: false
+    required:
+      - mission
+      - duties
+      - boundaries
+      - abstention_conditions
+      - escalation_rules
+    properties:
+      mission:
+        type: string
+      duties:
+        type: array
+        items:
+          type: string
+      boundaries:
+        type: array
+        items:
+          type: string
+      abstention_conditions:
+        type: array
+        items:
+          type: string
+      escalation_rules:
+        type: array
+        items:
+          type: string
+  authority:
+    type: object
+    additionalProperties: false
+    required:
+      - proposal_ref
+      - ratification_ref
+      - granted_scope
+      - exclusions
+      - effect_ceiling
+      - validity_state
+    properties:
+      proposal_ref:
+        type: string
+      ratification_ref:
+        type: string
+      granted_scope:
+        type: array
+        items:
+          type: string
+      exclusions:
+        type: array
+        items:
+          type: string
+      effect_ceiling:
+        enum:
+          - READ
+          - WRITE_REVERSIBLE
+          - EXTERNAL_EFFECT
+          - IRREVERSIBLE_OR_HIGH_IMPACT
+      validity_state:
+        enum:
+          - valid
+          - expired
+          - revoked
+          - unresolved
+      reserved_human_decisions:
+        type: array
+        items:
+          type: string
+  canonical_sources:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      additionalProperties: false
+      required:
+        - source_id
+        - ref
+        - domain
+        - precedence
+        - status
+      properties:
+        source_id:
+          type: string
+        ref:
+          type: string
+        domain:
+          type: string
+        precedence:
+          type: integer
+          minimum: 1
+        status:
+          enum:
+            - current
+            - superseded
+            - revoked
+            - unresolved
+        hash:
+          type:
+            - string
+            - "null"
+  last_seal:
+    oneOf:
+      - type: "null"
+      - type: object
+        additionalProperties: false
+        required:
+          - ref
+          - status
+        properties:
+          ref:
+            type: string
+          status:
+            enum:
+              - valid
+              - superseded
+              - revoked
+  work_state:
+    type: object
+    additionalProperties: false
+    required:
+      - completed_scope
+      - remaining_scope
+      - blocked_items
+      - known_debts
+    properties:
+      completed_scope:
+        type: array
+        items:
+          type: string
+      remaining_scope:
+        type: array
+        items:
+          type: string
+      blocked_items:
+        type: array
+        items:
+          type: string
+      known_debts:
+        type: array
+        items:
+          type: string
+  evidence:
+    type: object
+    additionalProperties: false
+    required:
+      - evidence_refs
+      - unresolved_conflicts
+      - missing_material_evidence
+    properties:
+      evidence_refs:
+        type: array
+        items:
+          type: string
+      unresolved_conflicts:
+        type: array
+        items:
+          type: string
+      missing_material_evidence:
+        type: array
+        items:
+          type: string
+  model_context:
+    type: object
+    additionalProperties: false
+    required:
+      - provider
+      - model_id
+      - snapshot_or_release
+      - routing_profile
+      - tool_configuration_ref
+    properties:
+      provider:
+        type: string
+      model_id:
+        type: string
+      snapshot_or_release:
+        type: string
+      routing_profile:
+        enum:
+          - sol
+          - terra
+          - luna
+          - custom
+      reasoning_configuration:
+        type:
+          - string
+          - "null"
+      tool_configuration_ref:
+        type: string
+  data_boundary:
+    type: object
+    additionalProperties: false
+    required:
+      - classification
+      - public_disclosure_allowed
+      - secrets_allowed
+      - personal_data_rule
+    properties:
+      classification:
+        enum:
+          - public
+          - internal
+          - restricted
+          - confidential
+      public_disclosure_allowed:
+        type: boolean
+      secrets_allowed:
+        const: false
+      personal_data_rule:
+        type: string
+
+x_vcof_invariants:
+  - missing material authority requires review or block
+  - unresolved canonical conflict requires review or block
+  - packet retrieval does not imply personal memory
+  - predecessor and successor instances are not assumed numerically identical
+  - packet content cannot expand the ratified authority envelope
+  - full conversation history is not required when bounded references suffice

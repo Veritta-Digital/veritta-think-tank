@@ -1,0 +1,80 @@
+api_version: public.vcof.veritta/v0.1
+kind: VCOFVersionManifest
+
+metadata:
+  manifest_id: vcof-core-2.2-public-rc1
+  version: 0.1.0
+  status: public-candidate
+  created_at: 2026-07-10
+  proposal_id: P&R-VCOF-CORE-2.2-2026-07
+
+authority_boundary:
+  repository_layer: public-research
+  sovereign_internal_canon: external-and-precedent
+  operational_activation: false
+  merge_authorized: false
+  production_mutation_authorized: false
+
+versions:
+  framework:
+    name: Veritta Cognitive-Operational Framework
+    acronym: V-COF
+    core_version: 2.2-rc.1
+    status: release-candidate-design
+    specification_ref: VCOF_CORE_2.2_RC_PUBLIC_SPEC.md
+  public_constitution:
+    ref: ../../vcof/vcof-public-constitution.md
+    relation: precedent-public-note
+  sovereign_constitution:
+    ref: private-canon
+    version: undisclosed
+    relation: externally-precedent
+  engine:
+    generation: "5.6"
+    status: declared-target-metadata
+    framework_version_equivalent: false
+    exact_provider_model: unresolved
+  routing_policy:
+    version: 0.1.0
+    ref: MODEL_ROUTING_POLICY_v0.1.yaml
+  boot_packet_schema:
+    version: 0.1.0
+    ref: BOOT_PACKET_SCHEMA_v0.1.yaml
+  registry_schemas:
+    version: 0.1.0
+    ref: PUBLIC_REGISTRY_SCHEMAS_v0.1.yaml
+  evaluation_annex:
+    version: 0.1.0
+    ref: EVALUATION_AND_PROMOTION_ANNEX_v0.1.md
+
+ratification:
+  id: P&R-VCOF-CORE-2.2-2026-07
+  version: 2026-07
+  state: ratified-for-drafting
+  record_ref: RATIFICATION_RECORD_2026-07-10.md
+  granted_effect_ceiling: WRITE_REVERSIBLE
+  branch_only: true
+  merge: false
+  production: false
+
+evidence:
+  public_protocol_ref: ../vcof-reinstantiation/PROPOSE_AND_RATIFY_PROTOCOL.md
+  public_vri_bench_ref: ../vcof-reinstantiation/VRI_BENCH_CORE_v0.1.md
+  public_adversarial_review_ref: ../vcof-reinstantiation/METACOGNITIVE_ADVERSARIAL_REVIEW_2026-06-21.md
+  empirical_results: []
+  empirical_status: no-results
+
+compatibility_claim:
+  level: proposal-only
+  live_projection_count: undisclosed
+  conforming_live_projections: []
+
+reserved:
+  - exact provider and model snapshots
+  - internal constitution amendment
+  - private ecosystem registry population
+  - private agent registry population
+  - operational activation
+  - merge
+  - paid evaluation
+  - V-COF 3.0 designation
